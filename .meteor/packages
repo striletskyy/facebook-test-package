@@ -6,8 +6,9 @@
 standard-app-packages
 autopublish
 insecure
-accounts-facebook
 bootstrap
 accounts-ui
 router
 iron-router
+npm
+accounts-facebook

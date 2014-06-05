@@ -2,12 +2,13 @@
 /* Home: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.Home.events({
-  /*
-   * Example: 
-   *  'click .selector': function (e, tmpl) {
-   *
-   *  }
-   */
+  'click button': function (e, tmpl) {
+    Meteor.call('getUserData', function(err, data){
+     console.log(err);
+     console.log(data);
+     $('#result').html(JSON.stringify(data, undefined, 4));
+    });
+   }
 });
 
 Template.Home.helpers({

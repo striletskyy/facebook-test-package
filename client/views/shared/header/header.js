@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Header: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.Header.events({
+Template.header.events({
   /*
    * Example: 
    *  'click .selector': function (e, tmpl) {
@@ -10,7 +10,7 @@ Template.Header.events({
    */
 });
 
-Template.Header.helpers({
+Template.header.helpers({
   /*
    * Example: 
    *  items: function () {
@@ -22,11 +22,11 @@ Template.Header.helpers({
 /*****************************************************************************/
 /* Header: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Header.created = function () {
+Template.header.created = function () {
 };
 
-Template.Header.rendered = function () {
+Template.header.rendered = function () {
 };
 
-Template.Header.destroyed = function () {
+Template.header.destroyed = function () {
 };
