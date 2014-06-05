@@ -29,6 +29,7 @@ Meteor.methods({
  getUserData: function() {
   var fb = new Facebook(Meteor.user().services.facebook.accessToken);
   var data = fb.getUserData();
+  console.log(data);
   return data;
  }
 });
