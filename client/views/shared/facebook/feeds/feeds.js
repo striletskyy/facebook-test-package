@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* FriendsList: Event Handlers and Helpers */
+/* Feeds: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.FriendsList.events({
+Template.Feeds.events({
   /*
    * Example: 
    *  'click .selector': function (e, tmpl) {
@@ -11,27 +11,30 @@ Template.FriendsList.events({
 });
 
 function loadData(){
- Meteor.call('getFriendList', function(err, res){
-  //console.log(res.data);
-  Session.set('friends', res.data);
+ Meteor.call('getFeeds', function(err, res){
+  console.log(res);
+  Session.set('feeds', res.data);
  });
 };
 loadData();
 
-Template.FriendsList.helpers({
- friends: function () {
-  return Session.get('friends');
- }
+Template.Feeds.helpers({
+  /*
+   * Example: 
+   *  items: function () {
+   *    return Items.find();
+   *  }
+   */
 });
 
 /*****************************************************************************/
-/* FriendsList: Lifecycle Hooks */
+/* Feeds: Lifecycle Hooks */
 /*****************************************************************************/
-Template.FriendsList.created = function () {
+Template.Feeds.created = function () {
 };
 
-Template.FriendsList.rendered = function () {
+Template.Feeds.rendered = function () {
 };
 
-Template.FriendsList.destroyed = function () {
+Template.Feeds.destroyed = function () {
 };

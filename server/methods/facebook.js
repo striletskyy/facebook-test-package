@@ -31,6 +31,9 @@ Facebook.prototype.getUserPhoto = function() {
 Facebook.prototype.getFriendList = function(){
  return this.query('/me/taggable_friends');
 };
+Facebook.prototype.getFeeds = function() {
+ return this.query('/me/feed');
+};
 Meteor.methods({
  getUserData: function() {
   var fb = new Facebook(Meteor.user().services.facebook.accessToken);
@@ -45,6 +48,11 @@ Meteor.methods({
  getFriendList: function() {
   var fb = new Facebook(Meteor.user().services.facebook.accessToken);
   var data = fb.getFriendList();
+  return data;
+ },
+ getFeeds: function() {
+  var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+  var data = fb.getFeeds();
   return data;
  }
 });
