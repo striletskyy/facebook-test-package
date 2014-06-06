@@ -12,13 +12,11 @@ Router.map(function () {
   this.route('home', {path: '/'});
   this.route('facebook', {
    path: '/facebook',
-   data: {email: 'striletskyy@hotmail.com'},
    onBeforeAction: function() {
-    console.log('before');
-    var self = this;
-    Meteor.call('getUserData', function(err, data) {
-     // ...
-    });
+    //console.log('before');
+    //Session.set('data', Meteor.call('getUserData'));
+    //console.log('data');
+    //console.log(Session.get('data'));
    }
   });
 });

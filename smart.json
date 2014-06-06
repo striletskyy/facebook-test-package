@@ -2,6 +2,7 @@
   "packages": {
     "router": {},
     "iron-router": {},
-    "npm": {}
+    "npm": {},
+    "bootstrap-3": {}
   }
 }
