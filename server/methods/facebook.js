@@ -29,7 +29,7 @@ Facebook.prototype.getUserPhoto = function() {
  return this.query('me/picture?redirect=0&height=200&type=normal&width=200');
 };
 Facebook.prototype.getFriendList = function(){
- return this.query('/me/friends');
+ return this.query('/me/taggable_friends');
 };
 Meteor.methods({
  getUserData: function() {

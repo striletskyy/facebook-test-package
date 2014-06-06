@@ -19,9 +19,6 @@ function loadData(){
   Session.set('photo', res.data);
   //console.log(res.data);
  });
- Meteor.call('getFriendList', function(err, res){
-  console.log(res);
- });
 };
 loadData();
 Template.Facebook.helpers({
