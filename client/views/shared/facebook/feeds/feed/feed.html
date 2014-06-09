@@ -1,0 +1,35 @@
+<template name="Feed">
+    <li class="list-group-item container-fluid" style="padding-left: 2em;">
+        <div class="row">
+            <h5>{{from.name}}</h5>
+        </div>
+        {{#if message}}
+            <div class="row">
+                <span>{{message}}</span>
+            </div>
+        {{/if}}
+        <div class="row">
+            {{#if picture}}
+                <div class="col-md-6">
+                    <img src="{{picture}}" alt="{{name}}" />
+                </div>
+                <div class="col-md-6">
+                    {{#if link}}
+                        <a href="{{link}}"><h4>{{name}}</h4></a>
+                    {{else}}
+                        <h4>{{name}}</h4>
+                    {{/if}}
+                    <span>{{description}}</span>
+                </div>
+            {{else}}
+                <h4>{{name}}</h4>
+                <span>{{description}}</span>
+            {{/if}}
+        </div>
+        <div class="row buttons">
+            {{#each actions}}
+            <a href="{{link}}">{{name}}</a>
+            {{/each}}
+        </div>
+    </li>
+</template>

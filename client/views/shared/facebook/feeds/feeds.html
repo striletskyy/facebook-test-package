@@ -1,4 +1,9 @@
 <template name="Feeds">
- <textarea class="form-control" rows="5"></textarea>
- <button class="btn btn-primary btn-sm">Public</button>
+    <textarea class="form-control" rows="5"></textarea>
+    <button class="btn btn-primary btn-sm">Public</button>
+    <ul class="list-group">
+        {{#each feeds}}
+            {{> Feed}}
+        {{/each}}
+    </ul>
 </template>

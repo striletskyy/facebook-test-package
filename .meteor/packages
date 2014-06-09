@@ -7,8 +7,8 @@ standard-app-packages
 insecure
 bootstrap
 accounts-ui
-router
-iron-router
 npm
 accounts-facebook
 bootstrap-3
+router
+iron-router

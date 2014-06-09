@@ -11,20 +11,23 @@ Template.Feeds.events({
 });
 
 function loadData(){
- Meteor.call('getFeeds', function(err, res){
-  console.log(res);
-  Session.set('feeds', res.data);
- });
+    Meteor.call('getFeeds', function(err, res){
+        console.log(res);
+        Session.set('feeds', res.data);
+    });
+    Meteor.call('getPhoto','35585623895', function(err, res){
+        console.log('Photo');
+        console.log(res);
+        //Session.get('');
+    });
 };
+
 loadData();
 
 Template.Feeds.helpers({
-  /*
-   * Example: 
-   *  items: function () {
-   *    return Items.find();
-   *  }
-   */
+  feeds: function() {
+      return Session.get('feeds');
+  }
 });
 
 /*****************************************************************************/

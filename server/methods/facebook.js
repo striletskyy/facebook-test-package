@@ -32,7 +32,10 @@ Facebook.prototype.getFriendList = function(){
  return this.query('/me/taggable_friends');
 };
 Facebook.prototype.getFeeds = function() {
- return this.query('/me/feed');
+ return this.query('/me/home');
+};
+Facebook.prototype.getPhoto = function(id){
+ return this.query(id + '/picture?redirect=0&height=200&type=normal&width=200');
 };
 Meteor.methods({
  getUserData: function() {
@@ -54,5 +57,10 @@ Meteor.methods({
   var fb = new Facebook(Meteor.user().services.facebook.accessToken);
   var data = fb.getFeeds();
   return data;
+ },
+ getPhoto: function(id) {
+     var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+     var data = fb.getPhoto(id);
+     return data;
  }
 });

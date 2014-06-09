@@ -1,0 +1,455 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'meteor-em' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.28
+4 verbose cache add [ 'meteor-em', null ]
+5 verbose cache add name=undefined spec="meteor-em" args=["meteor-em",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'meteor-em',
+6 verbose parsed url   path: 'meteor-em',
+6 verbose parsed url   href: 'meteor-em' }
+7 silly lockFile 3c60bfc3-meteor-em meteor-em
+8 verbose lock meteor-em /Users/striletskyy/.npm/3c60bfc3-meteor-em.lock
+9 silly lockFile 3c60bfc3-meteor-em meteor-em
+10 silly lockFile 3c60bfc3-meteor-em meteor-em
+11 verbose addNamed [ 'meteor-em', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile b1529746-meteor-em meteor-em@
+14 verbose lock meteor-em@ /Users/striletskyy/.npm/b1529746-meteor-em.lock
+15 silly addNameRange { name: 'meteor-em', range: '*', hasData: false }
+16 verbose url raw meteor-em
+17 verbose url resolving [ 'https://registry.npmjs.org/', './meteor-em' ]
+18 verbose url resolved https://registry.npmjs.org/meteor-em
+19 info trying registry request attempt 1 at 12:46:13
+20 http GET https://registry.npmjs.org/meteor-em
+21 http 200 https://registry.npmjs.org/meteor-em
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Mon, 09 Jun 2014 09:46:13 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"E5P7UYTRFY62YKN2BUBIZL1P5"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '8545',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '57',
+22 silly registry.get     'x-served-by': 'cache-sv62-SJC3, cache-fra1234-FRA',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1402307173.553623,VS0,VE208',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'meteor-em', range: '*', hasData: true }
+24 silly addNameRange versions [ 'meteor-em',
+24 silly addNameRange   [ '0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5' ] ]
+25 verbose addNamed [ 'meteor-em', '0.1.5' ]
+26 verbose addNamed [ '0.1.5', '0.1.5' ]
+27 silly lockFile c566ecd8-meteor-em-0-1-5 meteor-em@0.1.5
+28 verbose lock meteor-em@0.1.5 /Users/striletskyy/.npm/c566ecd8-meteor-em-0-1-5.lock
+29 silly lockFile 61457aa2-rg-meteor-em-meteor-em-0-1-5-tgz https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+30 verbose lock https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz /Users/striletskyy/.npm/61457aa2-rg-meteor-em-meteor-em-0-1-5-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz',
+31 verbose addRemoteTarball   '6d414965afffd547cec939e6598954d7f12dfaae' ]
+32 info retry fetch attempt 1 at 12:46:13
+33 verbose fetch to= /var/folders/2n/747q8d1n18s_3z0lhcwp4vgm0000gn/T/npm-5866-e7PjL30K/registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+34 http GET https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+35 http 200 https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+36 silly lockFile 61457aa2-rg-meteor-em-meteor-em-0-1-5-tgz https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+37 silly lockFile 61457aa2-rg-meteor-em-meteor-em-0-1-5-tgz https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz
+38 silly lockFile c566ecd8-meteor-em-0-1-5 meteor-em@0.1.5
+39 silly lockFile c566ecd8-meteor-em-0-1-5 meteor-em@0.1.5
+40 silly lockFile b1529746-meteor-em meteor-em@
+41 silly lockFile b1529746-meteor-em meteor-em@
+42 silly resolved [ { name: 'meteor-em',
+42 silly resolved     version: '0.1.5',
+42 silly resolved     description: 'A command line tool for scaffolding Meteor applications.',
+42 silly resolved     homepage: 'https://github.com/EventedMind/em',
+42 silly resolved     bugs:
+42 silly resolved      { url: 'https://github.com/EventedMind/em/issues',
+42 silly resolved        email: 'chris@eventedmind.com' },
+42 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+42 silly resolved     author: { name: 'Chris Mather', email: 'chris@eventedmind.com' },
+42 silly resolved     license: 'MIT',
+42 silly resolved     dependencies:
+42 silly resolved      { 'cli-color': '0.2.3',
+42 silly resolved        minimist: '0.0.8',
+42 silly resolved        underscore: '1.3.3',
+42 silly resolved        'cli-table': '0.3.0',
+42 silly resolved        ejs: '0.8.5',
+42 silly resolved        fibers: '1.0.1' },
+42 silly resolved     bin: { em: './bin/em.js' },
+42 silly resolved     _id: 'meteor-em@0.1.5',
+42 silly resolved     dist:
+42 silly resolved      { shasum: '6d414965afffd547cec939e6598954d7f12dfaae',
+42 silly resolved        tarball: 'http://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz' },
+42 silly resolved     _from: 'meteor-em@',
+42 silly resolved     _npmVersion: '1.3.24',
+42 silly resolved     _npmUser: { name: 'cmather', email: 'chris@eventedmind.com' },
+42 silly resolved     maintainers: [ [Object] ],
+42 silly resolved     directories: {},
+42 silly resolved     _shasum: '6d414965afffd547cec939e6598954d7f12dfaae',
+42 silly resolved     _resolved: 'https://registry.npmjs.org/meteor-em/-/meteor-em-0.1.5.tgz' } ]
+43 info install meteor-em@0.1.5 into /Users/striletskyy/Documents/projects/facebook-test-package
+44 info installOne meteor-em@0.1.5
+45 info /Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em unbuild
+46 verbose tar unpack /Users/striletskyy/.npm/meteor-em/0.1.5/package.tgz
+47 silly lockFile 6113309b-t-package-node-modules-meteor-em tar:///Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em
+48 verbose lock tar:///Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em /Users/striletskyy/.npm/6113309b-t-package-node-modules-meteor-em.lock
+49 silly lockFile bf36a193--npm-meteor-em-0-1-5-package-tgz tar:///Users/striletskyy/.npm/meteor-em/0.1.5/package.tgz
+50 verbose lock tar:///Users/striletskyy/.npm/meteor-em/0.1.5/package.tgz /Users/striletskyy/.npm/bf36a193--npm-meteor-em-0-1-5-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry bin/em.js
+56 silly gunzTarPerm extractEntry lib/command.js
+57 silly gunzTarPerm extractEntry lib/em.js
+58 silly gunzTarPerm extractEntry lib/generator.js
+59 silly gunzTarPerm extractEntry lib/log.js
+60 silly gunzTarPerm extractEntry lib/commands/generate.js
+61 silly gunzTarPerm extractEntry lib/commands/help.js
+62 silly gunzTarPerm extractEntry lib/commands/init.js
+63 silly gunzTarPerm extractEntry lib/commands/package.js
+64 silly gunzTarPerm extractEntry lib/commands/start.js
+65 silly gunzTarPerm extractEntry lib/generators/collection.js
+66 silly gunzTarPerm extractEntry lib/generators/controller.js
+67 silly gunzTarPerm extractEntry lib/generators/methods.js
+68 silly gunzTarPerm extractEntry lib/generators/package.js
+69 silly gunzTarPerm extractEntry lib/generators/project.js
+70 silly gunzTarPerm extractEntry lib/generators/publish.js
+71 silly gunzTarPerm extractEntry lib/generators/route.js
+72 silly gunzTarPerm extractEntry lib/generators/scaffold.js
+73 silly gunzTarPerm extractEntry lib/generators/view.js
+74 silly gunzTarPerm extractEntry lib/templates/create_collection.js.ejs
+75 silly gunzTarPerm extractEntry lib/templates/both/app.js.ejs
+76 silly gunzTarPerm extractEntry lib/templates/both/router/route.js.ejs
+77 silly gunzTarPerm extractEntry lib/templates/both/router/routes.js.ejs
+78 silly gunzTarPerm extractEntry lib/templates/collection_query_comment.js.ejs
+79 silly gunzTarPerm extractEntry lib/templates/controller.js.ejs
+80 silly gunzTarPerm extractEntry lib/templates/controller_server.js.ejs
+81 silly gunzTarPerm extractEntry lib/templates/client/app.css.ejs
+82 silly gunzTarPerm extractEntry lib/templates/client/app.html.ejs
+83 silly gunzTarPerm extractEntry lib/templates/client/app.js.ejs
+84 silly gunzTarPerm extractEntry lib/templates/client/views/master_layout.html.ejs
+85 silly gunzTarPerm extractEntry lib/templates/client/views/view.css.ejs
+86 silly gunzTarPerm extractEntry lib/templates/client/views/view.html.ejs
+87 silly gunzTarPerm extractEntry lib/templates/client/views/view.js.ejs
+88 silly gunzTarPerm extractEntry lib/templates/methods.js.ejs
+89 silly gunzTarPerm extractEntry lib/templates/package/main_file.js.ejs
+90 silly gunzTarPerm extractEntry lib/templates/package/package.js.ejs
+91 silly gunzTarPerm extractEntry lib/templates/package/test_file.js.ejs
+92 silly gunzTarPerm extractEntry lib/templates/publish.js.ejs
+93 silly gunzTarPerm extractEntry lib/templates/route.js.ejs
+94 silly gunzTarPerm extractEntry lib/templates/server/app.js.ejs
+95 silly gunzTarPerm extractEntry lib/templates/server/collections/collection_auth.js.ejs
+96 silly lockFile 6113309b-t-package-node-modules-meteor-em tar:///Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em
+97 silly lockFile 6113309b-t-package-node-modules-meteor-em tar:///Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em
+98 silly lockFile bf36a193--npm-meteor-em-0-1-5-package-tgz tar:///Users/striletskyy/.npm/meteor-em/0.1.5/package.tgz
+99 silly lockFile bf36a193--npm-meteor-em-0-1-5-package-tgz tar:///Users/striletskyy/.npm/meteor-em/0.1.5/package.tgz
+100 info preinstall meteor-em@0.1.5
+101 verbose readDependencies using package.json deps
+102 verbose readDependencies using package.json deps
+103 verbose cache add [ 'cli-color@0.2.3', null ]
+104 verbose cache add name=undefined spec="cli-color@0.2.3" args=["cli-color@0.2.3",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'cli-color@0.2.3',
+105 verbose parsed url   path: 'cli-color@0.2.3',
+105 verbose parsed url   href: 'cli-color@0.2.3' }
+106 verbose cache add [ 'minimist@0.0.8', null ]
+107 verbose cache add name=undefined spec="minimist@0.0.8" args=["minimist@0.0.8",null]
+108 verbose parsed url { protocol: null,
+108 verbose parsed url   slashes: null,
+108 verbose parsed url   auth: null,
+108 verbose parsed url   host: null,
+108 verbose parsed url   port: null,
+108 verbose parsed url   hostname: null,
+108 verbose parsed url   hash: null,
+108 verbose parsed url   search: null,
+108 verbose parsed url   query: null,
+108 verbose parsed url   pathname: 'minimist@0.0.8',
+108 verbose parsed url   path: 'minimist@0.0.8',
+108 verbose parsed url   href: 'minimist@0.0.8' }
+109 verbose cache add name="cli-color" spec="0.2.3" args=["cli-color","0.2.3"]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: null,
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: '0.2.3',
+110 verbose parsed url   path: '0.2.3',
+110 verbose parsed url   href: '0.2.3' }
+111 verbose addNamed [ 'cli-color', '0.2.3' ]
+112 verbose addNamed [ '0.2.3', '0.2.3' ]
+113 silly lockFile c1648217-cli-color-0-2-3 cli-color@0.2.3
+114 verbose lock cli-color@0.2.3 /Users/striletskyy/.npm/c1648217-cli-color-0-2-3.lock
+115 verbose cache add name="minimist" spec="0.0.8" args=["minimist","0.0.8"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: '0.0.8',
+116 verbose parsed url   path: '0.0.8',
+116 verbose parsed url   href: '0.0.8' }
+117 verbose addNamed [ 'minimist', '0.0.8' ]
+118 verbose addNamed [ '0.0.8', '0.0.8' ]
+119 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+120 verbose lock minimist@0.0.8 /Users/striletskyy/.npm/22c6b485-minimist-0-0-8.lock
+121 verbose cache add [ 'underscore@1.3.3', null ]
+122 verbose cache add name=undefined spec="underscore@1.3.3" args=["underscore@1.3.3",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'underscore@1.3.3',
+123 verbose parsed url   path: 'underscore@1.3.3',
+123 verbose parsed url   href: 'underscore@1.3.3' }
+124 verbose cache add [ 'cli-table@0.3.0', null ]
+125 verbose cache add name=undefined spec="cli-table@0.3.0" args=["cli-table@0.3.0",null]
+126 verbose parsed url { protocol: null,
+126 verbose parsed url   slashes: null,
+126 verbose parsed url   auth: null,
+126 verbose parsed url   host: null,
+126 verbose parsed url   port: null,
+126 verbose parsed url   hostname: null,
+126 verbose parsed url   hash: null,
+126 verbose parsed url   search: null,
+126 verbose parsed url   query: null,
+126 verbose parsed url   pathname: 'cli-table@0.3.0',
+126 verbose parsed url   path: 'cli-table@0.3.0',
+126 verbose parsed url   href: 'cli-table@0.3.0' }
+127 verbose cache add name="underscore" spec="1.3.3" args=["underscore","1.3.3"]
+128 verbose parsed url { protocol: null,
+128 verbose parsed url   slashes: null,
+128 verbose parsed url   auth: null,
+128 verbose parsed url   host: null,
+128 verbose parsed url   port: null,
+128 verbose parsed url   hostname: null,
+128 verbose parsed url   hash: null,
+128 verbose parsed url   search: null,
+128 verbose parsed url   query: null,
+128 verbose parsed url   pathname: '1.3.3',
+128 verbose parsed url   path: '1.3.3',
+128 verbose parsed url   href: '1.3.3' }
+129 verbose addNamed [ 'underscore', '1.3.3' ]
+130 verbose addNamed [ '1.3.3', '1.3.3' ]
+131 silly lockFile 99e765c4-underscore-1-3-3 underscore@1.3.3
+132 verbose lock underscore@1.3.3 /Users/striletskyy/.npm/99e765c4-underscore-1-3-3.lock
+133 verbose cache add name="cli-table" spec="0.3.0" args=["cli-table","0.3.0"]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: '0.3.0',
+134 verbose parsed url   path: '0.3.0',
+134 verbose parsed url   href: '0.3.0' }
+135 verbose addNamed [ 'cli-table', '0.3.0' ]
+136 verbose addNamed [ '0.3.0', '0.3.0' ]
+137 silly lockFile 16fa97d1-cli-table-0-3-0 cli-table@0.3.0
+138 verbose lock cli-table@0.3.0 /Users/striletskyy/.npm/16fa97d1-cli-table-0-3-0.lock
+139 verbose cache add [ 'ejs@0.8.5', null ]
+140 verbose cache add name=undefined spec="ejs@0.8.5" args=["ejs@0.8.5",null]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: 'ejs@0.8.5',
+141 verbose parsed url   path: 'ejs@0.8.5',
+141 verbose parsed url   href: 'ejs@0.8.5' }
+142 verbose cache add [ 'fibers@1.0.1', null ]
+143 verbose cache add name=undefined spec="fibers@1.0.1" args=["fibers@1.0.1",null]
+144 verbose parsed url { protocol: null,
+144 verbose parsed url   slashes: null,
+144 verbose parsed url   auth: null,
+144 verbose parsed url   host: null,
+144 verbose parsed url   port: null,
+144 verbose parsed url   hostname: null,
+144 verbose parsed url   hash: null,
+144 verbose parsed url   search: null,
+144 verbose parsed url   query: null,
+144 verbose parsed url   pathname: 'fibers@1.0.1',
+144 verbose parsed url   path: 'fibers@1.0.1',
+144 verbose parsed url   href: 'fibers@1.0.1' }
+145 verbose cache add name="ejs" spec="0.8.5" args=["ejs","0.8.5"]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: '0.8.5',
+146 verbose parsed url   path: '0.8.5',
+146 verbose parsed url   href: '0.8.5' }
+147 verbose addNamed [ 'ejs', '0.8.5' ]
+148 verbose addNamed [ '0.8.5', '0.8.5' ]
+149 silly lockFile c36c003a-ejs-0-8-5 ejs@0.8.5
+150 verbose lock ejs@0.8.5 /Users/striletskyy/.npm/c36c003a-ejs-0-8-5.lock
+151 verbose url raw cli-color
+152 verbose url resolving [ 'https://registry.npmjs.org/', './cli-color' ]
+153 verbose url resolved https://registry.npmjs.org/cli-color
+154 info trying registry request attempt 1 at 12:46:15
+155 http GET https://registry.npmjs.org/cli-color
+156 verbose url raw minimist
+157 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+158 verbose url resolved https://registry.npmjs.org/minimist
+159 info trying registry request attempt 1 at 12:46:15
+160 http GET https://registry.npmjs.org/minimist
+161 verbose cache add name="fibers" spec="1.0.1" args=["fibers","1.0.1"]
+162 verbose parsed url { protocol: null,
+162 verbose parsed url   slashes: null,
+162 verbose parsed url   auth: null,
+162 verbose parsed url   host: null,
+162 verbose parsed url   port: null,
+162 verbose parsed url   hostname: null,
+162 verbose parsed url   hash: null,
+162 verbose parsed url   search: null,
+162 verbose parsed url   query: null,
+162 verbose parsed url   pathname: '1.0.1',
+162 verbose parsed url   path: '1.0.1',
+162 verbose parsed url   href: '1.0.1' }
+163 verbose addNamed [ 'fibers', '1.0.1' ]
+164 verbose addNamed [ '1.0.1', '1.0.1' ]
+165 silly lockFile c99c8b50-fibers-1-0-1 fibers@1.0.1
+166 verbose lock fibers@1.0.1 /Users/striletskyy/.npm/c99c8b50-fibers-1-0-1.lock
+167 verbose url raw underscore
+168 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+169 verbose url resolved https://registry.npmjs.org/underscore
+170 info trying registry request attempt 1 at 12:46:15
+171 http GET https://registry.npmjs.org/underscore
+172 verbose url raw cli-table
+173 verbose url resolving [ 'https://registry.npmjs.org/', './cli-table' ]
+174 verbose url resolved https://registry.npmjs.org/cli-table
+175 info trying registry request attempt 1 at 12:46:15
+176 http GET https://registry.npmjs.org/cli-table
+177 verbose url raw ejs
+178 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+179 verbose url resolved https://registry.npmjs.org/ejs
+180 info trying registry request attempt 1 at 12:46:15
+181 http GET https://registry.npmjs.org/ejs
+182 verbose url raw fibers
+183 verbose url resolving [ 'https://registry.npmjs.org/', './fibers' ]
+184 verbose url resolved https://registry.npmjs.org/fibers
+185 info trying registry request attempt 1 at 12:46:15
+186 http GET https://registry.npmjs.org/fibers
+187 http 200 https://registry.npmjs.org/minimist
+188 silly registry.get cb [ 200,
+188 silly registry.get   { date: 'Mon, 09 Jun 2014 09:46:15 GMT',
+188 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+188 silly registry.get     etag: '"3VO7ZZOQ24NSBR02QPQUPI2GU"',
+188 silly registry.get     'content-type': 'application/json',
+188 silly registry.get     via: '1.1 varnish',
+188 silly registry.get     'cache-control': 'max-age=1',
+188 silly registry.get     'content-length': '16053',
+188 silly registry.get     'accept-ranges': 'bytes',
+188 silly registry.get     age: '10',
+188 silly registry.get     'x-served-by': 'cache-sv60-SJC3, cache-fra1220-FRA',
+188 silly registry.get     'x-cache': 'HIT, HIT',
+188 silly registry.get     'x-cache-hits': '1451, 1',
+188 silly registry.get     'x-timer': 'S1402307175.306448,VS0,VE0',
+188 silly registry.get     vary: 'Accept',
+188 silly registry.get     'keep-alive': 'timeout=10, max=50',
+188 silly registry.get     connection: 'Keep-Alive' } ]
+189 silly lockFile f7b98dc7--org-minimist-minimist-0-0-8-tgz https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+190 verbose lock https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz /Users/striletskyy/.npm/f7b98dc7--org-minimist-minimist-0-0-8-tgz.lock
+191 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+191 verbose addRemoteTarball   '857fcabfc3397d2625b8228262e86aa7a011b05d' ]
+192 info retry fetch attempt 1 at 12:46:15
+193 verbose fetch to= /var/folders/2n/747q8d1n18s_3z0lhcwp4vgm0000gn/T/npm-5866-e7PjL30K/registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+194 http GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+195 http 200 https://registry.npmjs.org/underscore
+196 silly registry.get cb [ 200,
+196 silly registry.get   { date: 'Mon, 09 Jun 2014 09:46:15 GMT',
+196 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+196 silly registry.get     etag: '"9HKWIKMYJIHROWRAYWSRE4KR0"',
+196 silly registry.get     'content-type': 'application/json',
+196 silly registry.get     via: '1.1 varnish',
+196 silly registry.get     'cache-control': 'max-age=1',
+196 silly registry.get     'content-length': '30518',
+196 silly registry.get     'accept-ranges': 'bytes',
+196 silly registry.get     age: '67',
+196 silly registry.get     'x-served-by': 'cache-sv61-SJC3, cache-fra1235-FRA',
+196 silly registry.get     'x-cache': 'HIT, HIT',
+196 silly registry.get     'x-cache-hits': '1618, 1',
+196 silly registry.get     'x-timer': 'S1402307175.325146,VS0,VE0',
+196 silly registry.get     vary: 'Accept',
+196 silly registry.get     'keep-alive': 'timeout=10, max=50',
+196 silly registry.get     connection: 'Keep-Alive' } ]
+197 silly lockFile a382d150--underscore-underscore-1-3-3-tgz https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+198 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz /Users/striletskyy/.npm/a382d150--underscore-underscore-1-3-3-tgz.lock
+199 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz',
+199 verbose addRemoteTarball   '47ac53683daf832bfa952e1774417da47817ae42' ]
+200 info retry fetch attempt 1 at 12:46:15
+201 verbose fetch to= /var/folders/2n/747q8d1n18s_3z0lhcwp4vgm0000gn/T/npm-5866-e7PjL30K/registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+202 http GET https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+203 http 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+204 silly lockFile f7b98dc7--org-minimist-minimist-0-0-8-tgz https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+205 silly lockFile f7b98dc7--org-minimist-minimist-0-0-8-tgz https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+206 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+207 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+208 verbose about to build /Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em
+209 info /Users/striletskyy/Documents/projects/facebook-test-package/node_modules/meteor-em unbuild
+210 info preuninstall meteor-em@0.1.5
+211 info uninstall meteor-em@0.1.5
+212 verbose true,/Users/striletskyy/Documents/projects/facebook-test-package/node_modules,/Users/striletskyy/Documents/projects/facebook-test-package/node_modules unbuild meteor-em@0.1.5
+213 verbose /Users/striletskyy/Documents/projects/facebook-test-package/node_modules/.bin,[object Object] binRoot
+214 info postuninstall meteor-em@0.1.5
+215 error Error: EACCES, open '/Users/striletskyy/.npm/minimist/0.0.8/package.tgz'
+215 error  { [Error: EACCES, open '/Users/striletskyy/.npm/minimist/0.0.8/package.tgz']
+215 error   errno: 3,
+215 error   code: 'EACCES',
+215 error   path: '/Users/striletskyy/.npm/minimist/0.0.8/package.tgz',
+215 error   parent: 'meteor-em' }
+216 error Please try running this command again as root/Administrator.
+217 error System Darwin 13.1.0
+218 error command "node" "/usr/local/bin/npm" "install" "meteor-em"
+219 error cwd /Users/striletskyy/Documents/projects/facebook-test-package
+220 error node -v v0.10.28
+221 error npm -v 1.4.14
+222 error path /Users/striletskyy/.npm/minimist/0.0.8/package.tgz
+223 error code EACCES
+224 error errno 3
+225 error stack Error: EACCES, open '/Users/striletskyy/.npm/minimist/0.0.8/package.tgz'
+226 verbose exit [ 3, true ]
