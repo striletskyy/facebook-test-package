@@ -2,6 +2,7 @@
     <li class="list-group-item container-fluid" style="padding-left: 2em;">
         <div class="row">
             <h5>{{from.name}}</h5>
+            <h6>{{created_time}}</h6>
         </div>
         {{#if message}}
             <div class="row">
@@ -28,7 +29,7 @@
         </div>
         <div class="row buttons">
             {{#each actions}}
-            <a href="{{link}}">{{name}}</a>
+                <a href="{{link}}">{{name}}</a>
             {{/each}}
         </div>
     </li>

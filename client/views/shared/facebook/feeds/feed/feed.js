@@ -11,7 +11,7 @@ Template.Feed.events({
 
 function loadData(){
     Meteor.call('getPhoto', '35585623895',  function(err, res){
-        console.log(Template.Feed.guid);
+        console.log(this.name);
         console.log(res);
         //Session.set('feeds', res.data);
     });

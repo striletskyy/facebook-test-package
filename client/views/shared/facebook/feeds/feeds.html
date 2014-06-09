@@ -1,5 +1,10 @@
 <template name="Feeds">
-    <textarea class="form-control" rows="5"></textarea>
+    <textarea class="form-control" rows="5" placeholder="Enter description"></textarea>
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Please select image.</p>
+    </div>
     <button class="btn btn-primary btn-sm">Public</button>
     <ul class="list-group">
         {{#each feeds}}
