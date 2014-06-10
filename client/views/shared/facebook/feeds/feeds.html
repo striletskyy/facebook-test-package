@@ -1,5 +1,5 @@
 <template name="Feeds">
-    {{> Post}}
+    <a href="{{pathFor 'post'}}" class="btn btn-success btn-xs">Post</a>
     <ul class="list-group">
         {{#each feeds}}
             {{> Feed}}
