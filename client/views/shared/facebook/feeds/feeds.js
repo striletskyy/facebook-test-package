@@ -16,8 +16,8 @@ function loadData(){
         Session.set('feeds', res.data);
     });
     Meteor.call('getPhoto','35585623895', function(err, res){
-        console.log('Photo');
-        console.log(res);
+        //console.log('Photo');
+        //console.log(res);
         //Session.get('');
     });
 };

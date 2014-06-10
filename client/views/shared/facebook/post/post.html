@@ -1,0 +1,14 @@
+<template name="Post">
+    <form role="form" name="post">
+        <input type="text" class="form-control" name="name" placeholder="Enter name">
+        <textarea class="form-control" name="description" rows="5" placeholder="Enter description"></textarea>
+        <div class="form-group">
+            <label for="imageFile">File input</label>
+            <input type="file" name="file" id="imageFile">
+            <p class="help-block">Please select image.</p>
+        </div>
+        <input type="text" name="link" class="form-control" placeholder="Enter link">
+        <textarea class="form-control" name="message" rows="3" placeholder="Enter message"></textarea>
+        <button class="btn btn-primary btn-sm">Public</button>
+    </form>
+</template>
