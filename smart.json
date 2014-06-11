@@ -3,6 +3,7 @@
     "npm": {},
     "bootstrap-3": {},
     "router": {},
-    "iron-router": {}
+    "iron-router": {},
+    "collectionFS": {}
   }
 }

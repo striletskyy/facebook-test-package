@@ -14,12 +14,19 @@ Router.map(function () {
         path: '/facebook/feeds',
         yieldTemplates: {
             'Feeds': {to: 'body'}
+        },
+        onBeforeAction: function() {
+            console.log(this.wait);
         }
     });
-    this.route('facebook', {
+    this.route('facebookPost', {
         path: '/facebook/post',
         yieldTemplates: {
             'Post': {to: 'body'}
-        }
+        },
+        template: 'Facebook'
+    });
+    this.route('notFound', {
+        path: '*'
     });
 });

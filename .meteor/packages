@@ -12,3 +12,5 @@ accounts-facebook
 bootstrap-3
 router
 iron-router
+collectionFS
+cfs-filesystem
