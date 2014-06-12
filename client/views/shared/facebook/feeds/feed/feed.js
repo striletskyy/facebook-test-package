@@ -9,19 +9,25 @@ Template.Feed.events({
    */
 });
 
-function loadData(){
-    Meteor.call('getPhoto', '35585623895',  function(err, res){
-        //console.log(this.name);
-        //console.log(res);
-        //Session.set('feeds', res.data);
-    });
-};
-
-loadData();
-
 Template.Feed.helpers({
     photo: function() {
-        return Session.get('profilePhoto');
+        var self = this;
+        Meteor.call('getPhoto', this.from.id,  function(err, res){
+            Session.set('profilePhoto' + self.from.id, res.data.url);
+        });
+        return Session.get('profilePhoto' + self.from.id);
+    },
+    time: function() {
+        var date = moment(this.created_time);
+        return date.startOf('hour').fromNow();
+    },
+    linkOwn: function() {
+        var self = this;
+        Meteor.call('getData', this.from.id,  function(err, res){
+            Session.set('link' + self.from.id, res.link);
+        });
+
+        return Session.get('link' + self.from.id);
     }
 });
 

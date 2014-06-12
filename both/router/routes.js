@@ -26,6 +26,23 @@ Router.map(function () {
         },
         template: 'Facebook'
     });
+    this.route('anyFile', {
+        where: 'server',
+        path: '/img/:file(*)',
+        action: function() {
+            var fs = Meteor.require('fs');
+            var fullFilePath = Meteor.call('getPath') + "/" + this.params.file;
+            var file = fs.readFileSync(fullFilePath);
+
+            var headers = {
+                'Content-type': 'image/jpeg',
+                'Content-Disposition': "attachment; filename=" + this.params.file
+            };
+
+            this.response.writeHead(200, headers);
+            return this.response.end(file);
+        }
+    });
     this.route('notFound', {
         path: '*'
     });

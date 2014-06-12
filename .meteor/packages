@@ -14,3 +14,4 @@ router
 iron-router
 collectionFS
 cfs-filesystem
+moment

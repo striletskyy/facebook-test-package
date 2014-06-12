@@ -1,8 +1,13 @@
 <template name="Feed">
     <li class="list-group-item container-fluid" style="padding-left: 2em;">
-        <div class="row">
-            <h5>{{from.name}}</h5>
-            <h6>{{created_time}}</h6>
+        <div class="row container-fluid">
+            <div class="col-md-2">
+                <img src="{{photo}}" height="60" width="60"/>
+            </div>
+            <div class="col-md-10">
+                <a href="{{linkOwn}}"><h5>{{from.name}}</h5></a>
+                <h6>{{time}}</h6>
+            </div>
         </div>
         {{#if message}}
             <div class="row">

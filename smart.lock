@@ -6,7 +6,8 @@
       "bootstrap-3": {},
       "router": {},
       "iron-router": {},
-      "collectionFS": {}
+      "collectionFS": {},
+      "moment": {}
     },
     "packages": {
       "npm": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
         "tag": "v0.4.8",
         "commit": "fea890b1e27799ccc9f71046748fb23a84330a16"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",

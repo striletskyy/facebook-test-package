@@ -7,3 +7,7 @@ li{
 h6{
     color: gray;
 }
+li .container-fluid{
+    padding-left: 0;
+    margin-left: -2em;
+}

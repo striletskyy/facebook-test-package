@@ -4,6 +4,7 @@
     "bootstrap-3": {},
     "router": {},
     "iron-router": {},
-    "collectionFS": {}
+    "collectionFS": {},
+    "moment": {}
   }
 }

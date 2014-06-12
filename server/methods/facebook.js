@@ -10,45 +10,59 @@ function Facebook(accessToken) {
     this.fb.setOptions(this.options);
 };
 
-Facebook.prototype.query = function(query, method) {
-    var self = this;
-    var method = (typeof method === 'undefined') ? 'get' : method;
-    var data = Meteor.sync(function(done){
-        self.fb[method](query, function(err, res) {
-            done(null, res);
+Facebook.prototype = {
+    query: function(query, method) {
+        var self = this;
+        var method = (typeof method === 'undefined') ? 'get' : method;
+        var data = Meteor.sync(function(done){
+            self.fb[method](query, function(err, res) {
+                done(null, res);
+            });
         });
-    });
 
-    return data.result;
-};
-Facebook.prototype.queryWithData = function(query, data, method) {
-    var method = (typeof method === 'undefined') ? 'get' : method;
-    this.fb[method](query, data, function(err, res){
-        if(err){
-            console.log(err);
-        } else {
-            console.log(res);
-        }
-    });
-};
-
-Facebook.prototype.getUserData = function() {
-    return this.query('me');
-};
-Facebook.prototype.getUserPhoto = function() {
-    return this.query('me/picture?redirect=0&height=200&type=normal&width=200');
-};
-Facebook.prototype.getFriendList = function(){
-    return this.query('/me/taggable_friends');
-};
-Facebook.prototype.getFeeds = function() {
-    return this.query('/me/home');
-};
-Facebook.prototype.getPhoto = function(id){
-    return this.query(id + '/picture?redirect=0&height=200&type=normal&width=200');
-};
-Facebook.prototype.postFeed = function(data){
-    this.queryWithData('me/feed', data, 'post');
+        return data.result;
+    },
+    queryWithData: function(query, data, method) {
+        var method = (typeof method === 'undefined') ? 'get' : method;
+        this.fb[method](query, data, function (err, res) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(res);
+            }
+        });
+    },
+    queryWithData: function(query, data, method) {
+        var method = (typeof method === 'undefined') ? 'get' : method;
+        this.fb[method](query, data, function(err, res){
+            if(err){
+                console.log(err);
+            } else {
+                console.log(res);
+            }
+        });
+    },
+    getUserData: function() {
+        return this.query('me');
+    },
+    getUserPhoto: function() {
+        return this.query('me/picture?redirect=0&height=200&type=normal&width=200');
+    },
+    getFriendList: function(){
+        return this.query('/me/taggable_friends');
+    },
+    getFeeds: function() {
+        return this.query('/me/home');
+    },
+    getPhoto: function(id){
+        return this.query(id + '/picture?redirect=0&height=200&type=normal&width=200');
+    },
+    getData: function(id) {
+        return this.query(id);
+    },
+    postFeed: function(data){
+        this.queryWithData('me/feed', data, 'post');
+    }
 };
 
 Meteor.methods({
@@ -80,5 +94,14 @@ Meteor.methods({
     postFeed: function(data) {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         fb.postFeed(data);
+    },
+    getData: function(id) {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getData(id);
+        return data;
+    },
+    getPath: function() {
+        console.log((process.env.PWD.toString() + "/img"));
+        return (process.env.PWD.toString() + "/img");
     }
 });
