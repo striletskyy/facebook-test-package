@@ -62,6 +62,12 @@ Facebook.prototype = {
     },
     postFeed: function(data){
         this.queryWithData('me/feed', data, 'post');
+    },
+    getAlbums: function() {
+        return this.query('me/albums');
+    },
+    getOwnPosts: function() {
+        return this.query('me/feed');
     }
 };
 
@@ -101,7 +107,16 @@ Meteor.methods({
         return data;
     },
     getPath: function() {
-        console.log((process.env.PWD.toString() + "/img"));
         return (process.env.PWD.toString() + "/img");
+    },
+    getAlbums: function() {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getAlbums();
+        return data;
+    },
+    getOwnPosts: function() {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getOwnPosts();
+        return data;
     }
 });

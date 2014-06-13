@@ -12,13 +12,21 @@ Template.Feeds.events({
 
 function loadData(){
     Meteor.call('getFeeds', function(err, res){
-        console.log(res);
         Session.set('feeds', res.data);
     });
-    Meteor.call('getPhoto','35585623895', function(err, res){
-        //console.log('Photo');
-        //console.log(res);
-        //Session.get('');
+    Meteor.call('getAlbums', function(err, res) {
+        if(err) {
+            console.log(err);
+        } else {
+            console.log(res);
+        }
+    });
+    Meteor.call('getOwnPosts', function(err, res) {
+        if(err) {
+            console.log(err);
+        } else {
+            console.log(res);
+        }
     });
 };
 

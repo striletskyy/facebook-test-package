@@ -10,24 +10,21 @@ Template.Feed.events({
 });
 
 Template.Feed.helpers({
-    photo: function() {
-        var self = this;
-        Meteor.call('getPhoto', this.from.id,  function(err, res){
-            Session.set('profilePhoto' + self.from.id, res.data.url);
-        });
-        return Session.get('profilePhoto' + self.from.id);
-    },
-    time: function() {
+    ownerData: function() {
         var date = moment(this.created_time);
-        return date.startOf('hour').fromNow();
-    },
-    linkOwn: function() {
         var self = this;
         Meteor.call('getData', this.from.id,  function(err, res){
             Session.set('link' + self.from.id, res.link);
         });
-
-        return Session.get('link' + self.from.id);
+        Meteor.call('getPhoto', this.from.id,  function(err, res){
+            Session.set('profilePhoto' + self.from.id, res.data.url);
+        });
+        return {
+            time: date.startOf('hour').fromNow(),
+            linkOwn: Session.get('link' + self.from.id),
+            photo: Session.get('profilePhoto' + self.from.id),
+            name: this.from.name
+        };
     }
 });
 
