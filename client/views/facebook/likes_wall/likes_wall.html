@@ -1,0 +1,16 @@
+<template name="LikesWall">
+    <div class="container-fluid">
+        {{#each likes}}
+            {{> LikesRow}}
+        {{/each}}
+    </div>
+    <div class="row btn btn-default">Load more</div>
+</template>
+
+<template name="LikesRow">
+    <div class="row">
+        {{#each this}}
+            {{> LikeItem}}
+        {{/each}}
+    </div>
+</template>

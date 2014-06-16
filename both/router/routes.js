@@ -43,6 +43,13 @@ Router.map(function () {
             return this.response.end(file);
         }
     });
+    this.route('me', {
+        path: '/facebook/me',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Me': {to: 'body'}
+        }
+    });
     this.route('notFound', {
         path: '*'
     });

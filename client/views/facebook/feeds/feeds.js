@@ -12,7 +12,12 @@ Template.Feeds.events({
 
 function loadData(){
     Meteor.call('getFeeds', function(err, res){
-        Session.set('feeds', res.data);
+        if(err) {
+            console.log(err);
+        } else {
+            console.log(res);
+            Session.set('feeds', res.data);
+        }
     });
     Meteor.call('getAlbums', function(err, res) {
         if(err) {

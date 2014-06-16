@@ -32,16 +32,6 @@ Facebook.prototype = {
             }
         });
     },
-    queryWithData: function(query, data, method) {
-        var method = (typeof method === 'undefined') ? 'get' : method;
-        this.fb[method](query, data, function(err, res){
-            if(err){
-                console.log(err);
-            } else {
-                console.log(res);
-            }
-        });
-    },
     getUserData: function() {
         return this.query('me');
     },
@@ -67,7 +57,13 @@ Facebook.prototype = {
         return this.query('me/albums');
     },
     getOwnPosts: function() {
-        return this.query('me/feed');
+        return this.query('me/posts');
+    },
+    getLikes: function() {
+        return this.query('me/likes');
+    },
+    executeQuery: function(query) {
+        return this.query(query);
     }
 };
 
@@ -117,6 +113,16 @@ Meteor.methods({
     getOwnPosts: function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getOwnPosts();
+        return data;
+    },
+    getLikes: function () {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getLikes();
+        return data;
+    },
+    executeQuery: function(query) {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.executeQuery(query);
         return data;
     }
 });
