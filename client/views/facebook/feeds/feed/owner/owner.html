@@ -1,7 +1,11 @@
 <template name="Owner">
     <div class="row container-fluid">
         <div class="col-md-2">
-            <img src="{{photo}}" height="60" width="60"/>
+            {{#if photo}}
+                <img src="{{photo}}" height="60" width="60"/>
+            {{else}}
+                <img src="{{pathFor 'anyFile' file='loading18.gif'}}" height="60" width="60"/>
+            {{/if}}
         </div>
         <div class="col-md-10">
             <a href="{{linkOwn}}"><h5>{{name}}</h5></a>

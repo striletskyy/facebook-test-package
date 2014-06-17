@@ -1,3 +1,12 @@
+var RouteUtilities = {
+    renderLoadingHook: function(pause) {
+        if(!this.ready()){
+            console.log('not ready');
+            this.render('Loading');
+            pause();
+        }
+    }
+};
 /*****************************************************************************/
 /* Client and Server Routes */
 /*****************************************************************************/
@@ -8,15 +17,13 @@ Router.configure({
   templateNameConverter: 'upperCamelCase',
   routeControllerNameConverter: 'upperCamelCase'
 });
+//Router.onBeforeAction(RouteUtilities.renderLoadingHook, {only: ['facebook']});
 Router.map(function () {
     this.route('home', {path: '/'});
     this.route('facebook', {
         path: '/facebook/feeds',
         yieldTemplates: {
             'Feeds': {to: 'body'}
-        },
-        onBeforeAction: function() {
-            console.log(this.wait);
         }
     });
     this.route('facebookPost', {
@@ -30,6 +37,7 @@ Router.map(function () {
         where: 'server',
         path: '/img/:file(*)',
         action: function() {
+            console.log('files');
             var fs = Meteor.require('fs');
             var fullFilePath = Meteor.call('getPath') + "/" + this.params.file;
             var file = fs.readFileSync(fullFilePath);
