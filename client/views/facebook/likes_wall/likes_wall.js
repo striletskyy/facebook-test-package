@@ -8,7 +8,6 @@ Template.LikesWall.utilities = {
             if(err) {
                 console.log(err);
             } else {
-                //console.log(res);
             }
         });
         Meteor.call('getLikes', function(err, res) {
@@ -17,7 +16,9 @@ Template.LikesWall.utilities = {
             } else {
                 Template.LikesWall.utilities.nextPage = res.paging.next;
                 var rows = Template.LikesWall.utilities.groupData(res.data, 3);
-                Session.set('likes', rows);
+                //Session.set('likes', rows);
+                App.ReactivityStorage.likes.set(rows);
+                //console.log(App.ReactivityStorage.likes.get());
             }
         });
     },
@@ -57,10 +58,10 @@ Template.LikesWall.utilities = {
         } else {
             Template.LikesWall.utilities.nextPage = null;
         }
-        var oldData = Template.LikesWall.utilities.reGroupData(Session.get('likes'));
+        var oldData = Template.LikesWall.utilities.reGroupData(App.ReactivityStorage.likes.get());
         Template.LikesWall.utilities.combineArrays(oldData, data.data);
-        Session.set('likes', Template.LikesWall.utilities.groupData(oldData, 3));
-        console.log(Session.get('likes'));
+        //Session.set('likes', Template.LikesWall.utilities.groupData(oldData, 3));
+        App.ReactivityStorage.likes.set(Template.LikesWall.utilities.groupData(oldData, 3));
     }
 };
 
@@ -76,7 +77,6 @@ Template.LikesWall.events({
             if(err) {
                 console.log(err);
             } else {
-                console.log(res);
                 Template.LikesWall.utilities.addLikes(res);
             }
         });
@@ -85,7 +85,7 @@ Template.LikesWall.events({
 
 Template.LikesWall.helpers({
     likes: function() {
-        return Session.get('likes');
+        return App.ReactivityStorage.likes.get();
     }
 });
 
@@ -96,6 +96,8 @@ Template.LikesWall.created = function () {
 };
 
 Template.LikesWall.rendered = function () {
+    $('li.active').removeClass('active');
+    $('li.more').addClass('active');
 };
 
 Template.LikesWall.destroyed = function () {

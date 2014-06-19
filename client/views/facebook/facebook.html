@@ -1,19 +1,20 @@
 <template name="Facebook">
- <h1>Welcome to Community Plus</h1> 
- <hr />
- <div class="container-fluid">
-  <div class="row">
-   <div class="col-md-3">
-    {{> PersonalInfo}}
-   </div>
-   <div class="col-md-6">
-    {{> yield region="body"}}
-   </div>
-   <div class="col-md-3">
-    {{> FriendsList}}
-   </div>
-  </div>
- </div>
- <hr />
- <div id="result-test"></div>
+    <h1>Welcome to Community Plus</h1>
+    <hr />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                {{> PersonalInfo}}
+            </div>
+            <div class="col-md-6">
+                {{> yield region="menu"}}
+                {{> yield region="body"}}
+            </div>
+            <div class="col-md-3">
+                {{> FriendsList}}
+            </div>
+        </div>
+    </div>
+    <hr />
+    {{> yield region="footer"}}
 </template>

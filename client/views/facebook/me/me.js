@@ -2,12 +2,10 @@
 /* Me: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.Me.events({
-  /*
-   * Example: 
-   *  'click .selector': function (e, tmpl) {
-   *
-   *  }
-   */
+    'click li': function(e) {
+        //e.preventDefault();
+
+    }
 });
 
 
@@ -23,6 +21,8 @@ Template.Me.created = function () {
 };
 
 Template.Me.rendered = function () {
+    $('li.active').removeClass('active');
+    $('li.me').addClass('active');
 };
 
 Template.Me.destroyed = function () {

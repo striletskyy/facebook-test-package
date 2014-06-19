@@ -55,7 +55,16 @@ Router.map(function () {
         path: '/facebook/me',
         template: 'Facebook',
         yieldTemplates: {
-            'Me': {to: 'body'}
+            'Me': {to: 'body'},
+            'Menu': {to: 'menu'}
+        }
+    });
+    this.route('likesWall', {
+        path: '/facebook/likes',
+        template: 'Facebook',
+        yieldTemplates: {
+            'LikesWall': {to: 'body'},
+            'Menu': {to: 'menu'}
         }
     });
     this.route('notFound', {

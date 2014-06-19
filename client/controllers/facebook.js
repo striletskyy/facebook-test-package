@@ -2,14 +2,12 @@
 /* FacebookController helpers */
 /*****************************************************************************/
 var helpers = {
-    feeds: null,
     loadData: function() {
         Meteor.call('getFeeds', function(err, res){
             if(err) {
                 console.log(err);
             } else {
-                helpers.feeds = res.data;
-                Session.set('feeds', res.data);
+                App.ReactivityStorage.feeds.set(res.data);
                 Session.set('isReady', true);
             }
         });
@@ -29,7 +27,7 @@ var helpers = {
 FacebookController = RouteController.extend({
     data: function() {
         return {
-            feeds: Session.get('feeds')
+            feeds: App.ReactivityStorage.feeds.get()
         };
     },
     waitOn: function() {

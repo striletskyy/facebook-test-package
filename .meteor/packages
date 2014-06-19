@@ -5,7 +5,6 @@
 
 standard-app-packages
 insecure
-bootstrap
 accounts-ui
 npm
 accounts-facebook
