@@ -3,11 +3,12 @@
 /*****************************************************************************/
 var helpers = {
     loadData: function() {
-        Meteor.call('getFeeds', function(err, res){
+        Meteor.call('facebook/getUserGroups', function(err, res){
             if(err) {
                 console.log(err);
             } else {
-                App.ReactivityStorage.feeds.set(res.data);
+                console.log(res.data);
+                App.ReactivityStorage.userGroups.set(res.data);
             }
         });
     },
@@ -21,18 +22,18 @@ var helpers = {
     }
 };
 /*****************************************************************************/
-/* FacebookController */
+/* GroupsController */
 /*****************************************************************************/
-FacebookController = RouteController.extend({
+GroupsController = RouteController.extend({
     data: function() {
         return {
-            feeds: App.ReactivityStorage.feeds.get()
+            feeds: App.ReactivityStorage.userGroups.get()
         };
     },
     waitOn: function() {
         return {
             ready: function() {
-                return !!App.ReactivityStorage.feeds.get();
+                return !!App.ReactivityStorage.userGroups.get();
             }
         };
     },

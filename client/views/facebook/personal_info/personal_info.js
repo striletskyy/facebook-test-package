@@ -1,4 +1,19 @@
 /*****************************************************************************/
+/* PersonalInfo: Utilities */
+/*****************************************************************************/
+Template.PersonalInfo.utilities = {
+    loadData: function() {
+        Meteor.call('getUserData', function(err, res){
+            App.ReactivityStorage.userData.set(res);
+        });
+        Meteor.call('getUserPhoto', function(err, res){
+            App.ReactivityStorage.photo.set(res.data);
+        });
+    }
+};
+
+Template.PersonalInfo.utilities.loadData();
+/*****************************************************************************/
 /* PersonalInfo: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.PersonalInfo.events({
@@ -9,25 +24,14 @@ Template.PersonalInfo.events({
    *  }
    */
 });
-function loadData(){
- Meteor.call('getUserData', function(err, res){
-  //console.log(res);
-  Session.set('data', res);
- });
- Meteor.call('getUserPhoto', function(err, res){
-  Session.set('photo', res.data);
-  //console.log(res.data);
- });
-};
-loadData();
 
 Template.PersonalInfo.helpers({
- data: function() {
-  return Session.get('data');
- },
- photo: function() {
-  return Session.get('photo');
- }
+    data: function() {
+        return App.ReactivityStorage.userData.get();
+    },
+    photo: function() {
+        return App.ReactivityStorage.photo.get();
+    }
 });
 
 /*****************************************************************************/

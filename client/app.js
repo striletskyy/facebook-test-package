@@ -1,7 +1,11 @@
 /*****************************************************************************/
-/* Interfaces */
+/* DepsObj: Reactive storage */
 /*****************************************************************************/
-var IDeps = {
+var DepsObj = function () {
+    this._value = null;
+    this._dep = new Deps.Dependency;
+};
+DepsObj.prototype = {
     get: function() {
         this._dep.depend();
         return this._value;
@@ -12,9 +16,7 @@ var IDeps = {
         }
         this._value = value;
         this._dep.changed();
-    },
-    _dep: new Deps.Dependency,
-    _value: null
+    }
 };
 /*****************************************************************************/
 /* Client App Namespace  */
@@ -23,8 +25,12 @@ var IDeps = {
 
 _.extend(App, {
     ReactivityStorage: {
-        feeds: _.extend(IDeps, {}),
-        likes: _.extend(IDeps, {})
+        feeds: new DepsObj(),
+        likes: new DepsObj(),
+        friends: new DepsObj(),
+        photo: new DepsObj(),
+        userData: new DepsObj(),
+        userGroups: new DepsObj()
     }
 });
 

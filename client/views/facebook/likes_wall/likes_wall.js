@@ -4,21 +4,13 @@
 Template.LikesWall.utilities = {
     nextPage: null,
     loadData: function() {
-        Meteor.call('getAlbums', function(err, res) {
-            if(err) {
-                console.log(err);
-            } else {
-            }
-        });
         Meteor.call('getLikes', function(err, res) {
             if(err) {
                 console.log(err);
             } else {
                 Template.LikesWall.utilities.nextPage = res.paging.next;
                 var rows = Template.LikesWall.utilities.groupData(res.data, 3);
-                //Session.set('likes', rows);
                 App.ReactivityStorage.likes.set(rows);
-                //console.log(App.ReactivityStorage.likes.get());
             }
         });
     },
@@ -60,7 +52,6 @@ Template.LikesWall.utilities = {
         }
         var oldData = Template.LikesWall.utilities.reGroupData(App.ReactivityStorage.likes.get());
         Template.LikesWall.utilities.combineArrays(oldData, data.data);
-        //Session.set('likes', Template.LikesWall.utilities.groupData(oldData, 3));
         App.ReactivityStorage.likes.set(Template.LikesWall.utilities.groupData(oldData, 3));
     }
 };

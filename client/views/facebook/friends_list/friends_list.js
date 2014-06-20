@@ -1,4 +1,15 @@
 /*****************************************************************************/
+/* FriendsList: Utilities */
+/*****************************************************************************/
+Template.FriendsList.utilities = {
+    loadData: function() {
+        Meteor.call('getFriendList', function(err, res){
+            App.ReactivityStorage.friends.set(res.data);
+        });
+    }
+};
+Template.FriendsList.utilities.loadData();
+/*****************************************************************************/
 /* FriendsList: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.FriendsList.events({
@@ -10,18 +21,10 @@ Template.FriendsList.events({
    */
 });
 
-function loadData(){
- Meteor.call('getFriendList', function(err, res){
-  //console.log(res.data);
-  Session.set('friends', res.data);
- });
-};
-loadData();
-
 Template.FriendsList.helpers({
- friends: function () {
-  return Session.get('friends');
- }
+    friends: function () {
+        return App.ReactivityStorage.friends.get();
+    }
 });
 
 /*****************************************************************************/

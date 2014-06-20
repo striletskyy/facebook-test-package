@@ -67,6 +67,14 @@ Router.map(function () {
             'Menu': {to: 'menu'}
         }
     });
+    this.route('groups', {
+        path: 'facebook/groups',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Groups': {to: 'body'},
+            'Menu': {to: 'menu'}
+        }
+    });
     this.route('notFound', {
         path: '*'
     });
