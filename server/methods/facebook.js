@@ -1,57 +1,55 @@
-FacebookMethods = {
-    getUserData: function() {
+var Facebook = App.Lib.Facebook;
+var FacebookMethods = {
+    'facebook/getUserData': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getUserData();
         return data;
     },
-    getUserPhoto: function() {
+    'facebook/getUserPhoto': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getUserPhoto();
         return data;
     },
-    getFriendList: function() {
+    'facebook/getFriendList': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getFriendList();
         return data;
     },
-    getFeeds: function() {
+    'facebook/getFeeds': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getFeeds();
         return data;
     },
-    getPhoto: function(id) {
+    'facebook/getPhoto': function(id) {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getPhoto(id);
         return data;
     },
-    postFeed: function(data) {
+    'facebook/postFeed': function(data) {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         fb.postFeed(data);
     },
-    getData: function(id) {
+    'facebook/getData': function(id) {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getData(id);
         return data;
     },
-    getPath: function() {
-        return (process.env.PWD.toString() + "/img");
-    },
-    getAlbums: function() {
+    'facebook/getAlbums': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getAlbums();
         return data;
     },
-    'getOwnPosts': function() {
+    'facebook/getOwnPosts': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getOwnPosts();
         return data;
     },
-    'getLikes': function () {
+    'facebook/getLikes': function () {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getLikes();
         return data;
     },
-    'executeQuery': function(query) {
+    'facebook/executeQuery': function(query) {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.executeQuery(query);
         return data;
@@ -62,6 +60,7 @@ FacebookMethods = {
         return data;
     }
 };
-/*_.extend(App, {
-    FacebookMethods: FacebookMethods
-});*/
+
+_.extend(App.Methods, {
+    Facebook: FacebookMethods
+});

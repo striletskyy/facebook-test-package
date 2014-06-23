@@ -31,6 +31,38 @@ _.extend(App, {
         photo: new DepsObj(),
         userData: new DepsObj(),
         userGroups: new DepsObj()
+    },
+    Utilities: {
+        groupData: function(data, cols) {
+            var newData = [];
+            var tempData = [];
+            for(var i = 0; i < data.length; i++){
+                tempData.push(data[i]);
+                if( (i + 1) % cols == 0 ){
+                    newData.push(_.compact(tempData));
+                    tempData = [];
+                }
+            }
+
+            return newData;
+        },
+        reGroupData: function(data) {
+            var newData = [];
+            for(var i = 0; i < data.length; i++){
+                for(var j = 0; j < data[i].length; j++){
+                    newData.push(data[i][j]);
+                }
+            }
+
+            return newData;
+        },
+        combineArrays: function(first, second) {
+            for(var i = 0; i < second.length; i++){
+                first.push(second[i]);
+            }
+
+            return first;
+        }
     }
 });
 

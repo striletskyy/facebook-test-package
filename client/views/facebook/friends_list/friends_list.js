@@ -3,7 +3,7 @@
 /*****************************************************************************/
 Template.FriendsList.utilities = {
     loadData: function() {
-        Meteor.call('getFriendList', function(err, res){
+        Meteor.call('facebook/getFriendList', function(err, res){
             App.ReactivityStorage.friends.set(res.data);
         });
     }

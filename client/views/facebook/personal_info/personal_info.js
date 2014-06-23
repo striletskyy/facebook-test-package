@@ -3,10 +3,10 @@
 /*****************************************************************************/
 Template.PersonalInfo.utilities = {
     loadData: function() {
-        Meteor.call('getUserData', function(err, res){
+        Meteor.call('facebook/getUserData', function(err, res){
             App.ReactivityStorage.userData.set(res);
         });
-        Meteor.call('getUserPhoto', function(err, res){
+        Meteor.call('facebook/getUserPhoto', function(err, res){
             App.ReactivityStorage.photo.set(res.data);
         });
     }

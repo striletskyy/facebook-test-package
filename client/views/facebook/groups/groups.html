@@ -1,0 +1,16 @@
+<template name="Groups">
+    <h3>Groups</h3>
+    <div class="container-fluid">
+        {{#each groups}}
+            {{> GroupRow}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="GroupRow">
+    <div class="row">
+        {{#each this}}
+            {{> Group}}
+        {{/each}}
+    </div>
+</template>

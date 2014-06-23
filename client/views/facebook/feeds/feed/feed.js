@@ -13,10 +13,10 @@ Template.Feed.helpers({
     ownerData: function() {
         var date = moment(this.created_time);
         var self = this;
-        Meteor.call('getData', this.from.id,  function(err, res){
+        Meteor.call('facebook/getData', this.from.id,  function(err, res){
             Session.set('link' + self.from.id, res.link);
         });
-        Meteor.call('getPhoto', this.from.id,  function(err, res){
+        Meteor.call('facebook/getPhoto', this.from.id,  function(err, res){
             Session.set('profilePhoto' + self.from.id, res.data.url);
         });
         return {

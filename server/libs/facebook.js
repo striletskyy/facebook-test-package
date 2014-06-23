@@ -1,4 +1,4 @@
-Facebook = function(accessToken) {
+var Facebook = function(accessToken) {
     this.fb = Meteor.require('fbgraph');
     this.accessToken = accessToken;
     this.fb.setAccessToken(this.accessToken);
@@ -69,3 +69,7 @@ Facebook.prototype = {
         return this._query('/me/groups');
     }
 };
+
+_.extend(App.Lib, {
+    Facebook: Facebook
+});

@@ -1,0 +1,12 @@
+<template name="Group">
+    <div class="col-md-4">
+        <div class="col-md-4">
+            {{#if itemPhoto}}
+            <img src="{{itemPhoto}}" class="img-thumbnail" />
+            {{else}}
+            <img src="{{pathFor 'anyFile' file='loading18.gif'}}" class="img-thumbnail" />
+            {{/if}}
+            <a href="{{info.link}}"><h4>{{name}}</h4></a>
+        </div>
+    </div>
+</template>

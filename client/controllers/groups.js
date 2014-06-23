@@ -7,8 +7,8 @@ var helpers = {
             if(err) {
                 console.log(err);
             } else {
-                console.log(res.data);
-                App.ReactivityStorage.userGroups.set(res.data);
+                var rows = App.Utilities.groupData(res.data, 3);
+                App.ReactivityStorage.userGroups.set(rows);
             }
         });
     },
@@ -27,7 +27,7 @@ var helpers = {
 GroupsController = RouteController.extend({
     data: function() {
         return {
-            feeds: App.ReactivityStorage.userGroups.get()
+            groups: App.ReactivityStorage.userGroups.get()
         };
     },
     waitOn: function() {

@@ -3,7 +3,7 @@
 /*****************************************************************************/
 var helpers = {
     loadData: function() {
-        Meteor.call('getFeeds', function(err, res){
+        Meteor.call('facebook/getFeeds', function(err, res){
             if(err) {
                 console.log(err);
             } else {
