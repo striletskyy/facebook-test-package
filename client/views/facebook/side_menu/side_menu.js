@@ -12,7 +12,7 @@ Template.SideMenu.events({
 
 Template.SideMenu.helpers({
     groups: function() {
-        if(!!App.ReactivityStorage.userGroups.get()) {
+        if(!App.ReactivityStorage.userGroups.get()) {
             Meteor.call('facebook/getUserGroups', function(err, res){
                 if(err) {
                     console.log(err);

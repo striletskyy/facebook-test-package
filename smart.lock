@@ -7,7 +7,8 @@
       "router": {},
       "iron-router": {},
       "collectionFS": {},
-      "moment": {}
+      "moment": {},
+      "accounts-meld": {}
     },
     "packages": {
       "npm": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.6.0",
         "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "accounts-meld": {
+        "git": "https://github.com/splendido/meteor-accounts-meld.git",
+        "tag": "v1.1.1",
+        "commit": "51232d314f41dc8ef09c8b1963d4c1648f6702c3"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
@@ -122,8 +128,8 @@
       },
       "cfs-tempstore": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-tempstore.git",
-        "tag": "v0.0.26",
-        "commit": "0b95e286b94754ca317b968a4d818cc65913dd72"
+        "tag": "v0.0.27",
+        "commit": "d8fe0422b2767391738ab537bf6749395e4030a0"
       },
       "emitter": {
         "git": "https://github.com/Meteor-Reaction/meteor-emitter.git",

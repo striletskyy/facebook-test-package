@@ -17,7 +17,7 @@ Router.configure({
   templateNameConverter: 'upperCamelCase',
   routeControllerNameConverter: 'upperCamelCase'
 });
-//Router.onBeforeAction(RouteUtilities.renderLoadingHook, {only: ['facebook']});
+
 Router.map(function () {
     this.route('home', {path: '/'});
     this.route('facebook', {
@@ -56,7 +56,9 @@ Router.map(function () {
         template: 'Facebook',
         yieldTemplates: {
             'Me': {to: 'body'},
-            'Menu': {to: 'menu'}
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'SideMenu': {to: 'left'}
         }
     });
     this.route('likesWall', {
@@ -64,7 +66,8 @@ Router.map(function () {
         template: 'Facebook',
         yieldTemplates: {
             'LikesWall': {to: 'body'},
-            'Menu': {to: 'menu'}
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'}
         }
     });
     this.route('groups', {
@@ -72,7 +75,19 @@ Router.map(function () {
         template: 'Facebook',
         yieldTemplates: {
             'Groups': {to: 'body'},
-            'Menu': {to: 'menu'}
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'SideMenu': {to: 'left'}
+        }
+    });
+    this.route('messages', {
+        path: 'facebook/messages',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Messages': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'Friends': {to: 'left'}
         }
     });
     this.route('notFound', {

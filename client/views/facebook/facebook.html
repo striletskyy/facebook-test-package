@@ -5,14 +5,13 @@
         <div class="row">
             <div class="col-md-3">
                 {{> PersonalInfo}}
-                {{> SideMenu}}
+                {{> yield region="left"}}
             </div>
             <div class="col-md-6">
                 {{> yield region="menu"}}
-                {{> yield region="body"}}
             </div>
             <div class="col-md-3">
-                {{> FriendsList}}
+                {{> yield region="right"}}
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@
     "router": {},
     "iron-router": {},
     "collectionFS": {},
-    "moment": {}
+    "moment": {},
+    "accounts-meld": {}
   }
 }

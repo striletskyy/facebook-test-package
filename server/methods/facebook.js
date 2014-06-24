@@ -58,6 +58,11 @@ var FacebookMethods = {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getUserGroups();
         return data;
+    },
+    'facebook/getUserMessages': function() {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getUserMessages();
+        return data;
     }
 };
 

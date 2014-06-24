@@ -67,6 +67,9 @@ Facebook.prototype = {
     },
     getUserGroups: function() {
         return this._query('/me/groups');
+    },
+    getUserMessages: function() {
+        return this._query('me/inbox');
     }
 };
 
