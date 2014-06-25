@@ -1,0 +1,14 @@
+<template name="Friend">
+    <li class="list-group-item container-fluid">
+        <a href="{{pathFor 'messagesList' _id=id}}">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{pathFor 'anyFile' file='loading18.gif'}}" height="60" width="60" class="img-rounded">
+                </div>
+                <div class="col-mad-8">
+                    <h5>{{name}}</h5>
+                </div>
+            </div>
+        </a>
+    </li>
+</template>

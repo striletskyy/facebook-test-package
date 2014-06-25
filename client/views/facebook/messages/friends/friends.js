@@ -11,12 +11,9 @@ Template.Friends.events({
 });
 
 Template.Friends.helpers({
-  /*
-   * Example: 
-   *  items: function () {
-   *    return Items.find();
-   *  }
-   */
+    friends: function() {
+        return App.ReactivityStorage.MessagesPage.friendsList.get();
+    }
 });
 
 /*****************************************************************************/

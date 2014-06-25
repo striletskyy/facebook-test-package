@@ -6,6 +6,8 @@
     "iron-router": {},
     "collectionFS": {},
     "moment": {},
-    "accounts-meld": {}
+    "accounts-meld": {},
+    "accounts-emails-field": {},
+    "accounts-meld-client-bootstrap": {}
   }
 }

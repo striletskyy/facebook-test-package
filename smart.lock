@@ -8,7 +8,9 @@
       "iron-router": {},
       "collectionFS": {},
       "moment": {},
-      "accounts-meld": {}
+      "accounts-meld": {},
+      "accounts-emails-field": {},
+      "accounts-meld-client-bootstrap": {}
     },
     "packages": {
       "npm": {
@@ -45,6 +47,16 @@
         "git": "https://github.com/splendido/meteor-accounts-meld.git",
         "tag": "v1.1.1",
         "commit": "51232d314f41dc8ef09c8b1963d4c1648f6702c3"
+      },
+      "accounts-emails-field": {
+        "git": "https://github.com/splendido/meteor-accounts-emails-field.git",
+        "tag": "v1.0.2",
+        "commit": "34839c52cb6150d4c1d41f85a20692e142795c25"
+      },
+      "accounts-meld-client-bootstrap": {
+        "git": "https://github.com/splendido/meteor-accounts-meld-client-templates-bootstrap.git",
+        "tag": "v1.0.3",
+        "commit": "c63022166f16da1bba615e8b6759d5e1d158986d"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",

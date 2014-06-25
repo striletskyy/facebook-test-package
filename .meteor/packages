@@ -15,3 +15,5 @@ collectionFS
 cfs-filesystem
 moment
 accounts-meld
+accounts-emails-field
+accounts-meld-client-bootstrap

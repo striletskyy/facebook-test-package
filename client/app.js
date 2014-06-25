@@ -31,7 +31,10 @@ _.extend(App, {
         photo: new DepsObj(),
         userData: new DepsObj(),
         userGroups: new DepsObj(),
-        messages: new DepsObj()
+        MessagesPage: {
+            messages: new DepsObj(),
+            friendsList: new DepsObj()
+        }
     },
     Utilities: {
         groupData: function(data, cols) {

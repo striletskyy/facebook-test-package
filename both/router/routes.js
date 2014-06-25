@@ -23,7 +23,8 @@ Router.map(function () {
     this.route('facebook', {
         path: '/facebook/feeds',
         yieldTemplates: {
-            'Feeds': {to: 'body'}
+            'Feeds': {to: 'body'},
+            'FriendsList': {to: 'right'}
         }
     });
     this.route('facebookPost', {
@@ -88,6 +89,24 @@ Router.map(function () {
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
             'Friends': {to: 'left'}
+        }
+    });
+    this.route('messagesList', {
+        path: 'facebook/messages/:_id',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Messages': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'Friends': {to: 'left'}
+        },
+        data: function() {
+            var id = this.params._id;
+            var message = _.filter(App.ReactivityStorage.MessagesPage.friendsList.get(), function(el) {
+                return el.id == id;
+            });
+            console.log(id, message);
+            return message;
         }
     });
     this.route('notFound', {

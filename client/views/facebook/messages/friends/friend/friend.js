@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* Messages: Event Handlers and Helpers */
+/* Friend: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.Messages.events({
+Template.Friend.events({
   /*
    * Example: 
    *  'click .selector': function (e, tmpl) {
@@ -10,18 +10,18 @@ Template.Messages.events({
    */
 });
 
-Template.Messages.helpers({
+Template.Friend.helpers({
 
 });
 
 /*****************************************************************************/
-/* Messages: Lifecycle Hooks */
+/* Friend: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Messages.created = function () {
+Template.Friend.created = function () {
 };
 
-Template.Messages.rendered = function () {
+Template.Friend.rendered = function () {
 };
 
-Template.Messages.destroyed = function () {
+Template.Friend.destroyed = function () {
 };
