@@ -7,7 +7,8 @@
     "collectionFS": {},
     "moment": {},
     "accounts-meld": {},
-    "accounts-emails-field": {},
-    "accounts-meld-client-bootstrap": {}
+    "accounts-meld-client-bootstrap": {},
+    "accounts-t9n": {},
+    "accounts-templates-bootstrap": {}
   }
 }

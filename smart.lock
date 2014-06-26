@@ -9,8 +9,9 @@
       "collectionFS": {},
       "moment": {},
       "accounts-meld": {},
-      "accounts-emails-field": {},
-      "accounts-meld-client-bootstrap": {}
+      "accounts-meld-client-bootstrap": {},
+      "accounts-t9n": {},
+      "accounts-templates-bootstrap": {}
     },
     "packages": {
       "npm": {
@@ -48,15 +49,20 @@
         "tag": "v1.1.1",
         "commit": "51232d314f41dc8ef09c8b1963d4c1648f6702c3"
       },
-      "accounts-emails-field": {
-        "git": "https://github.com/splendido/meteor-accounts-emails-field.git",
-        "tag": "v1.0.2",
-        "commit": "34839c52cb6150d4c1d41f85a20692e142795c25"
-      },
       "accounts-meld-client-bootstrap": {
         "git": "https://github.com/splendido/meteor-accounts-meld-client-templates-bootstrap.git",
         "tag": "v1.0.3",
         "commit": "c63022166f16da1bba615e8b6759d5e1d158986d"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/splendido/meteor-accounts-t9n.git",
+        "branch": "master",
+        "commit": "8e6c9de02ed12d71fa2dcd79d59bc7952cb22097"
+      },
+      "accounts-templates-bootstrap": {
+        "git": "https://github.com/splendido/accounts-templates-bootstrap.git",
+        "tag": "v0.0.10",
+        "commit": "3e1b8c9cc0675158ed9d382551cecdbdcd1c0380"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
@@ -108,6 +114,11 @@
         "tag": "v0.0.12",
         "commit": "774bf581e0f3da269dc842672ed6c2da09fd2bdf"
       },
+      "accounts-templates-core": {
+        "git": "https://github.com/splendido/accounts-templates-core.git",
+        "tag": "v0.0.10",
+        "commit": "86853d94200fc4cac699b7919319554656e58ebc"
+      },
       "cfs-filesaver": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-filesaver.git",
         "tag": "v0.0.3",
@@ -115,8 +126,8 @@
       },
       "cfs-storage-adapter": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-storage-adapter.git",
-        "tag": "v0.0.26",
-        "commit": "cb9808ec519f8673d2cc4cc881b6eda9e56bdead"
+        "tag": "v0.0.27",
+        "commit": "cb9c89450762396418c09a14b5a48609b4e62fc8"
       },
       "http-methods": {
         "git": "https://github.com/CollectionFS/Meteor-http-methods.git",
