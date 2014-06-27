@@ -8,7 +8,7 @@
     "moment": {},
     "accounts-meld": {},
     "accounts-meld-client-bootstrap": {},
-    "accounts-t9n": {},
-    "accounts-templates-bootstrap": {}
+    "accounts-templates-bootstrap": {},
+    "accounts-templates-core": "0.0.9"
   }
 }
