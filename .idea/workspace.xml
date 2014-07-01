@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="383cc014-f293-4b63-b012-6eed2f93d550" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key.pub" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/accounts.js" afterPath="$PROJECT_DIR$/server/accounts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/config.js" afterPath="$PROJECT_DIR$/client/lib/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/facebook/post/post.js" afterPath="$PROJECT_DIR$/client/views/facebook/post/post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="facebook-test-package.iws" />
@@ -25,71 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="accounts-meld-server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/accounts-meld/lib/accounts-meld-server.js">
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/both/router/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3555" max-vertical-offset="7335">
-              <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="1815">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/home/home.js">
+      <file leaf-file-name="smart.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smart.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="585">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accounts-meld_tests.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/accounts-meld/tests/accounts-meld_tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11292" max-vertical-offset="12225">
-              <caret line="808" column="109" selection-start-line="107" selection-start-column="0" selection-end-line="808" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="675">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accounts.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/accounts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37800688" vertical-offset="0" max-vertical-offset="873">
-              <caret line="22" column="89" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packages.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.1943463" vertical-offset="0" max-vertical-offset="849">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -108,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/controllers/me.js" />
         <option value="$PROJECT_DIR$/client/controllers/any_file.js" />
         <option value="$PROJECT_DIR$/client/views/shared/loading/loading.html" />
         <option value="$PROJECT_DIR$/client/views/facebook/facebook.js" />
@@ -129,7 +83,6 @@
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/lib/facebook.js" />
-        <option value="$PROJECT_DIR$/client/controllers/facebook.js" />
         <option value="$PROJECT_DIR$/client/views/facebook/feeds/feed/feed.js" />
         <option value="$PROJECT_DIR$/client/views/facebook/friends_list/friends_list.js" />
         <option value="$PROJECT_DIR$/client/views/facebook/groups/group/group.js" />
@@ -154,11 +107,13 @@
         <option value="$PROJECT_DIR$/client/controllers/messages.js" />
         <option value="$PROJECT_DIR$/both/router/routes.js" />
         <option value="$PROJECT_DIR$/client/views/facebook/messages/messages.html" />
-        <option value="$PROJECT_DIR$/client/lib/config.js" />
         <option value="$PROJECT_DIR$/lib/app.js" />
         <option value="$PROJECT_DIR$/client/views/home/home.html" />
-        <option value="$PROJECT_DIR$/smart.json" />
+        <option value="$PROJECT_DIR$/client/lib/config.js" />
         <option value="$PROJECT_DIR$/server/accounts.js" />
+        <option value="$PROJECT_DIR$/client/controllers/facebook.js" />
+        <option value="$PROJECT_DIR$/client/views/facebook/post/post.js" />
+        <option value="$PROJECT_DIR$/smart.json" />
       </list>
     </option>
   </component>
@@ -193,6 +148,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,7 +191,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="methods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook-test-package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook-test-package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,20 +255,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook-test-package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook-test-package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,7 +295,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="facebook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,25 +313,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook-test-package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook-test-package" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="facebook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="post" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,7 +359,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,11 +376,11 @@
       <recent name="$PROJECT_DIR$/client/views/shared/facebook/feeds/feed" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/client/views/facebook/friends_list" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/server/test" />
-      <recent name="$PROJECT_DIR$/server/methods" />
     </key>
   </component>
   <component name="RunManager">
@@ -508,7 +461,11 @@
       <created>1403879024185</created>
       <updated>1403879024185</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Trying deploy">
+      <created>1404147147256</created>
+      <updated>1404147147256</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +513,8 @@
     <MESSAGE value="Refactoring, working with messages" />
     <MESSAGE value="Working on &quot;accounts-meld&quot;" />
     <MESSAGE value="Fix bugs, add google accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs, add google accounts" />
+    <MESSAGE value="Trying deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying deploy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,24 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/facebook/post/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/both/images.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03436426" vertical-offset="0" max-vertical-offset="873">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/methods/utilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -633,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/methods/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13745704" vertical-offset="0" max-vertical-offset="873">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/facebook/feeds/feeds.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
@@ -654,32 +591,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/facebook/post/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
-          <caret line="11" column="102" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/facebook/side_menu/side_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="465">
           <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/methods/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="1140">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/controllers/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="873">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -694,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
           <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/libs/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84192437" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -809,20 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/both/router/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1815">
-          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/facebook/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.017667845" vertical-offset="0" max-vertical-offset="849">
@@ -834,13 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-36.875" vertical-offset="0" max-vertical-offset="1650">
           <caret line="59" column="27" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -865,18 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.106529206" vertical-offset="417" max-vertical-offset="1290">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/accounts-meld/tests/accounts-meld_tests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11292" max-vertical-offset="12225">
           <caret line="808" column="109" selection-start-line="107" selection-start-column="0" selection-end-line="808" selection-end-column="109" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3217" max-vertical-offset="7305">
           <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,14 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24734983" vertical-offset="0" max-vertical-offset="849">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -915,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,14 +791,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25773194" vertical-offset="0" max-vertical-offset="873">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.106529206" vertical-offset="417" max-vertical-offset="1290">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/libs/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1245">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/controllers/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/facebook/post/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="315">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/facebook/post/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12027492" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/accounts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37800688" vertical-offset="0" max-vertical-offset="873">
-          <caret line="22" column="89" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/methods/utilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/methods/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/methods/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8625429" vertical-offset="192" max-vertical-offset="1140">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/both/router/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="1815">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1943463" vertical-offset="0" max-vertical-offset="849">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding />
         </state>
       </provider>

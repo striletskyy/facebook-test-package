@@ -4,7 +4,7 @@
 Template.Post.events({
     'click button': function(e) {
         e.preventDefault();
-        var files = post.file;
+        var files = post.file.files;
         for (var i = 0, ln = files.length; i < ln; i++) {
             var file = files[i];
             Images.insert(file, function (err, fileObj) {
@@ -14,10 +14,10 @@ Template.Post.events({
                     name: post.name.value,
                     description: post.description.value,
                     link: post.link.value,
-                    picture: "http://communityplus.meteor.com/img/" + fileName
+                    picture: "http://community-plus-20518.onmodulus.net/" + fileName
                 };
                 console.log(data.picture);
-                postFile(data);
+                //postFile(data);
             });
             console.log('writing ...');
         }

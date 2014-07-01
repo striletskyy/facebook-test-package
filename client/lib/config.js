@@ -14,8 +14,3 @@ Accounts.ui.config({
  }
 });
 
-Accounts.loginServiceConfiguration.insert({
-    "service": "facebook",
-    "appId": "769472786418635",
-    "secret": "7dd51609fa39ec9112466df80b28306a"
-});
