@@ -1,5 +1,8 @@
 <template name="Messages">
-    {{id}}
-    <textarea class="form-control" name="message" rows="3" placeholder="Enter message"></textarea>
+    {{# each messages}}
+        {{> LastMessage}}
+    {{else}}
+        No messages!
+    {{/each}}
 </template>
 

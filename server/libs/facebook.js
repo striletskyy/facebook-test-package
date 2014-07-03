@@ -56,6 +56,9 @@ Facebook.prototype = {
     getAlbums: function() {
         return this._query('me/albums');
     },
+    getPhotoFromAlbum: function(idAlbum){
+        return this._query(idAlbum.toString() + '/photos');
+    },
     getOwnPosts: function() {
         return this._query('me/posts');
     },
@@ -70,7 +73,11 @@ Facebook.prototype = {
     },
     getUserMessages: function() {
         return this._query('me/inbox');
-    }
+    },
+    getPermissions: function() {
+        return this._query('me/permissions');
+    },
+
 };
 
 _.extend(App.Lib, {

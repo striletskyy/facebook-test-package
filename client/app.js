@@ -32,6 +32,7 @@ _.extend(App, {
         userData: new DepsObj(),
         userGroups: new DepsObj(),
         MessagesPage: {
+            dialogue: new DepsObj(),
             messages: new DepsObj(),
             friendsList: new DepsObj()
         }
@@ -76,5 +77,21 @@ App.helpers = {
 _.each(App.helpers, function (helper, key) {
   Handlebars.registerHelper(key, helper);
 });
+
+
+function loadData() {
+    console.log('loading data ...');
+    Meteor.call('facebook/getPermissions', function(err, res) {
+        if(err){
+            console.log(err);
+        } else if(res){
+            console.log(res);
+        } else {
+            console.log('no data ...');
+        }
+    });
+};
+
+loadData();
 
 

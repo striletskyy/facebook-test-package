@@ -39,6 +39,11 @@ var FacebookMethods = {
         var data = fb.getAlbums();
         return data;
     },
+    'facebook/getPhotoFromAlbum': function(idAlbum) {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getPhotoFromAlbum(idAlbum);
+        return data;
+    },
     'facebook/getOwnPosts': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getOwnPosts();
@@ -62,6 +67,11 @@ var FacebookMethods = {
     'facebook/getUserMessages': function() {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getUserMessages();
+        return data;
+    },
+    'facebook/getPermissions': function() {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.getPermissions();
         return data;
     }
 };

@@ -1,3 +1,12 @@
 <template name="Message">
-    <li>{{id}}</li>
+    <div class="single-message row">
+        <div class="message-author col-md-3">
+            {{from.name}}
+        </div>
+        <div class="message-content col-md-9">
+            <a>
+                {{message}}
+            </a>
+        </div>
+    </div>
 </template>

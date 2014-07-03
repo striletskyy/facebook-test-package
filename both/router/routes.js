@@ -109,7 +109,35 @@ Router.map(function () {
             return message;
         }
     });
+    this.route('facebookTests', {
+        path: 'facebook/tests',
+        template: 'Facebook',
+        yieldTemplates: {
+            'FBTests': {to: 'body'}
+        }
+    });
+    this.route('photos', {
+        path: 'facebook/photos'
+    });
+    this.route('dialogue', {
+        path: 'facebook/messages/:_id',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Dialogue': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'Friends': {to: 'left'}
+        },
+        data: function() {
+            var id = this.params._id;
+            return {
+                id: id,
+                dialogue: App.ReactivityStorage.MessagesPage.dialogue.get()
+            };
+        }
+    });
     this.route('notFound', {
         path: '*'
     });
+
 });

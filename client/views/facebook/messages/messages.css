@@ -1,3 +1,18 @@
 /*****************************************************************************/
 /* Messages: Style */
 /*****************************************************************************/
+
+.last-message-content, .message-content {
+    background-color: #f8f8f8;
+    padding: 0;
+}
+.last-message-content a, .message-content a {
+    display: block;
+    padding: 10px;
+    color: #777;
+}
+
+.last-message-content a:hover, .message-content a:hover {
+    background-color: #EFEFEF;
+    text-decoration: none;
+}

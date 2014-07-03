@@ -1,0 +1,6 @@
+<template name="Dialogue">
+    {{#each dialogue.comments.data}}
+        {{> Message}}
+    {{/each}}
+    <textarea class="form-control" name="message" rows="3" placeholder="Enter message"></textarea>
+</template>
