@@ -35,7 +35,8 @@ _.extend(App, {
             dialogue: new DepsObj(),
             messages: new DepsObj(),
             friendsList: new DepsObj()
-        }
+        },
+        albums: new DepsObj()
     },
     Utilities: {
         groupData: function(data, cols) {
