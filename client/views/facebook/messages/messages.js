@@ -11,7 +11,18 @@ Template.Messages.events({
 });
 
 Template.Messages.helpers({
-
+    href: function() {
+        return "http://google.com";
+    },
+    ref: function() {
+        return "author";
+    },
+    colorscheme: function() {
+        return "dark";
+    },
+    kid_directed_site: function() {
+        return "google.com";
+    }
 });
 
 /*****************************************************************************/

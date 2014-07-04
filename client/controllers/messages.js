@@ -8,12 +8,9 @@ var helpers = {
         Meteor.call('facebook/getUserMessages', function(err, res){
             if(err) {
                 console.log(err);
-            } else if(res.data) {
-                console.log(res.data);
-                App.ReactivityStorage.MessagesPage.messages.set(res.data);
-                loadFriendsList();
-            } else {
+            } else if(res) {
                 console.log(res);
+                App.ReactivityStorage.MessagesPage.messages.set(res.data)
             }
         });
 

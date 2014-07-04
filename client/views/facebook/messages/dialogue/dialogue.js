@@ -2,12 +2,20 @@
 /* Dialogue: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.Dialogue.events({
-  /*
-   * Example: 
-   *  'click .selector': function (e, tmpl) {
-   *
-   *  }
-   */
+    'submit form': function(e) {
+        e.preventDefault();
+        var data = {
+            id: Router.current().params._id,
+            message: $(e.target).find('[name=message]').val()
+        }
+        Meteor.call('facebook/postMessageToFriends', data, function(err, res) {
+            if (err) {
+                console.log(err);
+            } else if (res) {
+                console.log(res);
+            }
+        });
+    }
 });
 
 Template.Dialogue.helpers({

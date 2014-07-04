@@ -119,7 +119,7 @@
       "accounts-t9n": {
         "git": "https://github.com/splendido/meteor-accounts-t9n.git",
         "branch": "master",
-        "commit": "8e6c9de02ed12d71fa2dcd79d59bc7952cb22097"
+        "commit": "9189c58aeba752d3e369f9fad5e1f718d90d2b3f"
       },
       "cfs-filesaver": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-filesaver.git",

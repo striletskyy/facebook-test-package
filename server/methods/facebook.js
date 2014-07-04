@@ -73,6 +73,11 @@ var FacebookMethods = {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getPermissions();
         return data;
+    },
+    'facebook/postMessageToFriends': function(data) {
+        var fb = new Facebook(Meteor.user().services.facebook.accessToken);
+        var data = fb.postMessageToFriends(data);
+        return data;
     }
 };
 

@@ -77,7 +77,10 @@ Facebook.prototype = {
     getPermissions: function() {
         return this._query('me/permissions');
     },
-
+    postMessageToFriends: function(data) {
+        console.log(data);
+        return this._queryWithData(data.id.toString() + '/messages', [{"message": 'hi'}], 'post');
+    }
 };
 
 _.extend(App.Lib, {

@@ -2,5 +2,17 @@
     {{#each dialogue.comments.data}}
         {{> Message}}
     {{/each}}
-    <textarea class="form-control" name="message" rows="3" placeholder="Enter message"></textarea>
+    <form class="main">
+        <div class="control-group">
+            <label class="control-label" for="message">Message</label>
+            <div class="controls">
+                <textarea class="form-control send-message" name="message" rows="3" placeholder="Enter message"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input type="submit" value="Submit" class="btn btn-primary"/>
+            </div>
+        </div>
+    </form>
 </template>

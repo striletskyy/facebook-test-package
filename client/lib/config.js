@@ -10,7 +10,7 @@ Accounts.ui.config({
              'friends_relationship_details', 'friends_relationships', 'friends_religion_politics',
              'friends_status', 'friends_subscriptions', 'friends_videos', 'friends_website',
              'friends_work_history', 'read_stream', 'publish_actions', 'photo_upload', 'user_photos', 'user_likes', 'user_groups',
-             'read_mailbox', 'user_birthday']
+             'read_mailbox', 'user_birthday', 'read_page_mailboxes']
  }
 });
 
