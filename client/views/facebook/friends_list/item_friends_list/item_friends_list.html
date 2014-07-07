@@ -1,12 +1,12 @@
 <template name="ItemFriendsList">
     <li class="list-group-item container-fluid">
-        <div class="row">
+        <a href="#"><div class="row">
             <div class="col-md-4">
-                <img src="{{picture.data.url}}" alt="{{name}}" class="img-circle">
+                <img src="{{picture.data.url}}" alt="{{name}}" class="small-avatar">
             </div>
-            <div class="col-mad-8">
-                <h5>{{name}}</h5>
+            <div class="col-md-8">
+                <h5 class="item-friends-list-name">{{name}}</h5>
             </div>
-        </div>
+        </div></a>
     </li>
 </template>

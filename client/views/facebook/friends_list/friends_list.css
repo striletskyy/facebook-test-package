@@ -1,3 +1,38 @@
 /*****************************************************************************/
 /* FriendsList: Style */
 /*****************************************************************************/
+.item-friends-list-name {
+    line-height: 30px;
+}
+.list-group-item {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.list-group-item:hover {
+    background-color: #f8f8f8;
+}
+
+.list-group-item .row {
+    margin-top: 0;
+}
+
+.small-avatar {
+
+}
+
+ul.list-group {
+    margin-top: 0;
+}
+
+.list-group-item:first-child {
+    margin-top: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:first-child {
+    margin-bottom: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

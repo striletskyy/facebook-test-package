@@ -31,6 +31,8 @@ _.extend(App, {
         photo: new DepsObj(),
         userData: new DepsObj(),
         userGroups: new DepsObj(),
+        music: new DepsObj(),
+        cover: new DepsObj(),
         MessagesPage: {
             dialogue: new DepsObj(),
             messages: new DepsObj(),

@@ -80,6 +80,9 @@ Facebook.prototype = {
     postMessageToFriends: function(data) {
         console.log(data);
         return this._queryWithData(data.id.toString() + '/messages', [{"message": 'hi'}], 'post');
+    },
+    getUserMusic: function() {
+        return this._query('me/music');
     }
 };
 

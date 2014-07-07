@@ -136,6 +136,16 @@ Router.map(function () {
             };
         }
     });
+    this.route('music', {
+        path: 'facebook/music',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Music': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'Friends': {to: 'left'}
+        }
+    });
     this.route('notFound', {
         path: '*'
     });
