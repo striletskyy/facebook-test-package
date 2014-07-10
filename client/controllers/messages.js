@@ -10,7 +10,9 @@ var helpers = {
                 console.log(err);
             } else if(res) {
                 console.log(res);
-                App.ReactivityStorage.MessagesPage.messages.set(res.data)
+                var correctData = helpers.correctMessages(res.data);
+                console.log('messages', correctData);
+                App.ReactivityStorage.MessagesPage.messages.set(correctData);
             }
         });
 
@@ -62,7 +64,15 @@ var helpers = {
             // Private fields
             var friends = [];
             var len = correctMessages.length - 1;
-        }
+        };
+    },
+    correctMessages: function(data) {
+        return _.filter(data, function(el) {
+            return  el.comments &&
+                    el.comments.data[0] &&
+                    el.comments.data[0].message &&
+                    el.comments.data[0].from;
+        }); 
     },
     renderLoadingHook: function(pause) {
         if(!this.ready()){
@@ -86,8 +96,7 @@ MessagesController = RouteController.extend({
     waitOn: function() {
         return {
             ready: function() {
-                return !!App.ReactivityStorage.MessagesPage.messages.get() &&
-                       !!App.ReactivityStorage.MessagesPage.friendsList.get();
+                return !!App.ReactivityStorage.MessagesPage.messages.get();
             }
         };
     },
