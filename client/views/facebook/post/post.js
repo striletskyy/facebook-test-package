@@ -3,26 +3,8 @@
 /*****************************************************************************/
 Template.Post.events({
     'click button': function(e) {
-        e.preventDefault();
-        var files = post.file.files;
-        for (var i = 0, ln = files.length; i < ln; i++) {
-            var file = files[i];
-            Images.insert(file, function (err, fileObj) {
-                var fileName = "images-" + fileObj._id + "-" + file.name;
-                var data = {
-                    message: post.message.value,
-                    name: post.name.value,
-                    description: post.description.value,
-                    link: post.link.value,
-                    picture: "http://community-plus-20518.onmodulus.net/" + fileName
-                };
-                console.log(data.picture);
-                //postFile(data);
-            });
-            console.log('writing ...');
-        }
         var postFile = function(data) {
-             Meteor.call('postFeed', data, function(err, res) {
+             Meteor.call('facebook/postFeed', data, function(err, res) {
                  if(err){
                     console.log(err);
                  } else {
@@ -30,6 +12,29 @@ Template.Post.events({
                  }
              });
              Router.go('facebook');
+        };
+
+        e.preventDefault();
+        var files = post.file.files;
+        console.log('files :', files);
+        for (var i = 0, ln = files.length; i < ln; i++) {
+            var file = files[i];
+            var image = Images.insert(file, function (err, fileObj) {
+                var fileName = "images-" + fileObj._id + "-" + file.name;
+                var data = {
+                    message: post.message.value,
+                    name: post.name.value,
+                    description: post.description.value,
+                    link: post.link.value
+                    //picture: "https://29e04356bc0a82129f08-9420084240a0442a36db484efcdc4d60.ssl.cf3.rackcdn.com/img-downloads.png"
+                };
+                //postFile(data);
+                console.log('fileName :', fileName);
+            });
+            console.log('writing ... ', image);
+
+
+
         }
     },
     'change input[type="file"]': function(e) {

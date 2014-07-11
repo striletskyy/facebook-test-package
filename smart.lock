@@ -14,7 +14,9 @@
       "accounts-templates-core": {
         "version": "0.0.9"
       },
-      "facebook-sdk": {}
+      "facebook-sdk": {},
+      "rackit": {},
+      "cfs-s3": {}
     },
     "packages": {
       "npm": {
@@ -72,6 +74,16 @@
         "tag": "v0.0.44",
         "commit": "cb71b860085ec6453b61644b31f6351e7de2c1b0"
       },
+      "rackit": {
+        "git": "https://github.com/patrickocoffeyo/meteor-rackit.git",
+        "tag": "v0.0.1",
+        "commit": "9bfe11aefc7c0bc30a319b54b3fb5acc518cb432"
+      },
+      "cfs-s3": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-s3.git",
+        "tag": "v0.0.29",
+        "commit": "97d3c544165c766115f2b91a6aaca54a7438a558"
+      },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
         "tag": "v1.3.5",
@@ -127,15 +139,15 @@
         "branch": "master",
         "commit": "9189c58aeba752d3e369f9fad5e1f718d90d2b3f"
       },
-      "cfs-filesaver": {
-        "git": "https://github.com/CollectionFS/Meteor-cfs-filesaver.git",
-        "tag": "v0.0.3",
-        "commit": "29cd7ae4dab138aa5e3792485945e742c46fc330"
-      },
       "cfs-storage-adapter": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-storage-adapter.git",
         "tag": "v0.0.28",
         "commit": "8e0513815501d79b3d531a64f80717b4e9a34a42"
+      },
+      "cfs-filesaver": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-filesaver.git",
+        "tag": "v0.0.3",
+        "commit": "29cd7ae4dab138aa5e3792485945e742c46fc330"
       },
       "http-methods": {
         "git": "https://github.com/CollectionFS/Meteor-http-methods.git",

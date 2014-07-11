@@ -10,6 +10,8 @@
     "accounts-meld-client-bootstrap": {},
     "accounts-templates-bootstrap": {},
     "accounts-templates-core": "0.0.9",
-    "facebook-sdk": {}
+    "facebook-sdk": {},
+    "rackit": {},
+    "cfs-s3": {}
   }
 }
