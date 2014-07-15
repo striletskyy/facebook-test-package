@@ -3,6 +3,10 @@
 /*****************************************************************************/
 Template.Post.events({
     'click button': function(e) {
+        /**
+         * Post to facebook wall
+         * @param {object} data 
+         */
         var postFile = function(data) {
              Meteor.call('facebook/postFeed', data, function(err, res) {
                  if(err){
@@ -16,10 +20,9 @@ Template.Post.events({
 
         e.preventDefault();
         var files = post.file.files;
-        console.log('files :', files);
         for (var i = 0, ln = files.length; i < ln; i++) {
             var file = files[i];
-            var image = Images.insert(file, function (err, fileObj) {
+            Images.insert(file, function (err, fileObj) {
                 var fileName = "images-" + fileObj._id + "-" + file.name;
                 var data = {
                     message: post.message.value,
@@ -29,12 +32,13 @@ Template.Post.events({
                     //picture: "https://29e04356bc0a82129f08-9420084240a0442a36db484efcdc4d60.ssl.cf3.rackcdn.com/img-downloads.png"
                 };
                 //postFile(data);
-                console.log('fileName :', fileName);
+                setTimeout(function() {
+                    console.log('url :', Images.findOne().url({download: true}));
+                }, 2000);
+
+                
             });
-            console.log('writing ... ', image);
-
-
-
+            console.log('writing ... ', Images);
         }
     },
     'change input[type="file"]': function(e) {
@@ -52,7 +56,9 @@ Template.Post.events({
 });
 
 Template.Post.helpers({
-
+    files: function() {
+        return Images.find();
+    }
 });
 
 /*****************************************************************************/

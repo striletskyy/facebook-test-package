@@ -38,7 +38,10 @@ _.extend(App, {
             messages: new DepsObj(),
             friendsList: new DepsObj()
         },
-        albums: new DepsObj()
+        albums: new DepsObj(),
+        SyncData: {
+            syncMessages: new DepsObj()
+        }
     },
     Utilities: {
         groupData: function(data, cols) {

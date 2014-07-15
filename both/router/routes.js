@@ -40,6 +40,11 @@ Router.map(function () {
         action: function() {
             console.log('files');
             var fs = Meteor.require('fs');
+            console.log('create read stream :', Images.findOne());
+            this.response.writeHead(200, {});
+            
+            return 'helo !!!';
+            
             var fullFilePath = Meteor.call('getPath') + "/" + this.params.file;
             var file = fs.readFileSync(fullFilePath);
 
@@ -48,7 +53,6 @@ Router.map(function () {
                 'Content-Disposition': "attachment; filename=" + this.params.file
             };
 
-            this.response.writeHead(200, headers);
             return this.response.end(file);
         }
     });

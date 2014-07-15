@@ -11,5 +11,13 @@
         <input type="text" name="link" class="form-control" placeholder="Enter link">
         <textarea class="form-control" name="message" rows="3" placeholder="Enter message"></textarea>
         <button class="btn btn-primary btn-sm">Public</button>
+
+        {{#each files}}
+      <div class="file">
+        <strong>{{this.name}}</strong> <a href="{{this.url download=true}}" class="btn btn-primary">Download</a>
+      </div>
+    {{/each}}
     </form>
+
+
 </template>

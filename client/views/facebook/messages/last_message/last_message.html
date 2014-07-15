@@ -1,11 +1,15 @@
 <template name="LastMessage">
     <div class="single-message row">
         <div class="last-message-author col-md-3">
-            {{lastMessageInfo.author}}
+            {{lastMessageInfo.companion}}
         </div>
         <div class="last-message-content col-md-9">
             <a href="{{pathFor 'dialogue' _id=id}}">
-                {{lastMessageInfo.content}}
+                {{#if isItMine}}
+                    <span class="glyphicon glyphicon-share-alt">{{lastMessageInfo.content}}</span>
+                {{else}}
+                    <span>{{lastMessageInfo.content}}</span>
+                {{/if}}
             </a>
         </div>
     </div>
