@@ -59,4 +59,4 @@ Template.SyncBtn.rendered = function () {
 Template.SyncBtn.destroyed = function () {
 };
 
-setInterval(function() { return Template.SyncBtn.utilities.sync() },10000);
+//setInterval(function() { return Template.SyncBtn.utilities.sync() },10000);

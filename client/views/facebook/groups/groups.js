@@ -2,31 +2,28 @@
 /* Groups: Event Handlers and Helpers */
 /*****************************************************************************/
 Template.Groups.events({
-  /*
-   * Example: 
-   *  'click .selector': function (e, tmpl) {
-   *
-   *  }
-   */
+    /*
+     * Example:
+     *  'click .selector': function (e, tmpl) {
+     *
+     *  }
+     */
 });
+
+Template.Groups.utilities = {
+    loadData: function() {
+        Meteor.call('facebook/getUserGroups', function(err, res){
+            App.ReactivityStorage.groups.set(res.data);
+            console.log(err||res);
+        });
+    },
+};
+
+Template.Groups.utilities.loadData();
 
 Template.Groups.helpers({
-  /*
-   * Example: 
-   *  items: function () {
-   *    return Items.find();
-   *  }
-   */
+    groups: function() {
+        return App.ReactivityStorage.groups.get();
+    }
 });
 
-/*****************************************************************************/
-/* Groups: Lifecycle Hooks */
-/*****************************************************************************/
-Template.Groups.created = function () {
-};
-
-Template.Groups.rendered = function () {
-};
-
-Template.Groups.destroyed = function () {
-};

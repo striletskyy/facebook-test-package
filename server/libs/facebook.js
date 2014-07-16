@@ -83,6 +83,9 @@ Facebook.prototype = {
     },
     getUserMusic: function() {
         return this._query('me/music');
+    },
+    getUserMusic: function() {
+        return this._query('me/music');
     }
 };
 

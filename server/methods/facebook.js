@@ -83,7 +83,8 @@ var FacebookMethods = {
         var fb = new Facebook(Meteor.user().services.facebook.accessToken);
         var data = fb.getUserMusic();
         return data;
-    }
+    },
+
 };
 
 _.extend(App.Methods, {

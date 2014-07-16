@@ -23,22 +23,22 @@ Template.Post.events({
         for (var i = 0, ln = files.length; i < ln; i++) {
             var file = files[i];
             Images.insert(file, function (err, fileObj) {
+                if(err){
+                    console.log('err :', err);
+                } 
                 var fileName = "images-" + fileObj._id + "-" + file.name;
                 var data = {
                     message: post.message.value,
                     name: post.name.value,
                     description: post.description.value,
-                    link: post.link.value
-                    //picture: "https://29e04356bc0a82129f08-9420084240a0442a36db484efcdc4d60.ssl.cf3.rackcdn.com/img-downloads.png"
+                    link: post.link.value,
+                    picture: "http://localhost:2000/cfs/files/images/" + fileObj._id
                 };
                 //postFile(data);
-                setTimeout(function() {
-                    console.log('url :', Images.findOne().url({download: true}));
-                }, 2000);
-
-                
+                console.log('link :', data.picture);
+                //var image = Images.find({_id: fileObj._id});
+                //console.log('imageUrl', image && image.url);
             });
-            console.log('writing ... ', Images);
         }
     },
     'change input[type="file"]': function(e) {

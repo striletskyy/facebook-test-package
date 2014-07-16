@@ -12,7 +12,6 @@ bootstrap-3
 router
 iron-router
 collectionFS
-cfs-filesystem
 moment
 accounts-meld
 accounts-meld-client-bootstrap
@@ -21,3 +20,4 @@ accounts-templates-bootstrap
 accounts-templates-core
 rackit
 cfs-s3
+cfs-gridfs

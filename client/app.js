@@ -33,6 +33,8 @@ _.extend(App, {
         userGroups: new DepsObj(),
         music: new DepsObj(),
         cover: new DepsObj(),
+        groups: new DepsObj(),
+        interests: new DepsObj(),
         MessagesPage: {
             dialogue: new DepsObj(),
             messages: new DepsObj(),

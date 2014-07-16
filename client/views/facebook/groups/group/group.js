@@ -13,21 +13,18 @@ Template.Group.events({
 Template.Group.helpers({
     itemPhoto: function() {
         var self = this;
-        Meteor.call('facebook/getPhoto', this.id,  function(err, res){
-            //Session.set('groupsPhoto' + self.id, res.data.url);
-            //console.log('groups');
-            //console.log(res);
+        Meteor.call('facebook/getData', this.id + "/?fields=cover",  function(err, res){
+            Session.set('groupsPhoto' + self.id, res.cover.source);
+            console.log(Session.get('groupsPhoto' + self.id));
+            console.log(res||err);
         });
-
-        return Session.get('facebook/groupsPhoto' + this.id);
+        return Session.get('groupsPhoto' + this.id);
     },
     info: function() {
         var self = this;
         Meteor.call('facebook/getData', this.id,  function(err, res){
             Session.set('groupsOwnerData' + self.id, res);
-            console.log(res);
         });
-
         return Session.get('groupsOwnerData' + this.id);
     }
 });

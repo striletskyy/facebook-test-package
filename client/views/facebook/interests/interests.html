@@ -1,0 +1,11 @@
+<template name="Interests">
+    <h3>Interests</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Music</h1>
+            {{#each musicians}}
+                {{> Interest}}
+            {{/each}}
+        </div>
+    </div>
+</template>

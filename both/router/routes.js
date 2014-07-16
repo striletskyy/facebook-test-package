@@ -24,12 +24,14 @@ Router.map(function () {
         path: '/facebook/feeds',
         yieldTemplates: {
             'Feeds': {to: 'body'},
+            'PersonalInfo': {to: 'top-left'},
             'FriendsList': {to: 'right'}
         }
     });
     this.route('facebookPost', {
         path: '/facebook/post',
         yieldTemplates: {
+            'PersonalInfo': {to: 'top-left'},
             'Post': {to: 'body'}
         },
         template: 'Facebook'
@@ -40,7 +42,7 @@ Router.map(function () {
         action: function() {
             console.log('files');
             var fs = Meteor.require('fs');
-            console.log('create read stream :', Images.findOne());
+            console.log('One images read stream :', Images.findOne().url());
             this.response.writeHead(200, {});
             
             return 'helo !!!';
@@ -63,6 +65,7 @@ Router.map(function () {
             'Me': {to: 'body'},
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
             'SideMenu': {to: 'left'}
         }
     });
@@ -72,7 +75,19 @@ Router.map(function () {
         yieldTemplates: {
             'LikesWall': {to: 'body'},
             'Menu': {to: 'menu'},
+            'PersonalInfo': {to: 'top-left'},
             'FriendsList': {to: 'right'}
+        }
+    });
+    this.route('interests', {
+        path: 'facebook/interests',
+        template: 'Facebook',
+        yieldTemplates: {
+            'Interests': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
+            'SideMenu': {to: 'left'}
         }
     });
     this.route('groups', {
@@ -82,7 +97,24 @@ Router.map(function () {
             'Groups': {to: 'body'},
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
             'SideMenu': {to: 'left'}
+        }
+    });
+    this.route('group', {
+        path: 'facebook/groups/:_id',
+        template: 'Facebook',
+        yieldTemplates: {
+            'GroupPage': {to: 'body'},
+            'Menu': {to: 'menu'},
+            'FriendsList': {to: 'right'},
+            'GroupSidebar': {to: 'left'}
+        },
+        data: function() {
+            var id = this.params._id;
+            return {
+                id: id
+            };
         }
     });
     this.route('messages', {
@@ -92,6 +124,7 @@ Router.map(function () {
             'Messages': {to: 'body'},
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
             'Friends': {to: 'left'}
         }
     });
@@ -130,6 +163,7 @@ Router.map(function () {
             'Dialogue': {to: 'body'},
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
             'Friends': {to: 'left'}
         },
         data: function() {
@@ -147,6 +181,7 @@ Router.map(function () {
             'Music': {to: 'body'},
             'Menu': {to: 'menu'},
             'FriendsList': {to: 'right'},
+            'PersonalInfo': {to: 'top-left'},
             'Friends': {to: 'left'}
         }
     });
