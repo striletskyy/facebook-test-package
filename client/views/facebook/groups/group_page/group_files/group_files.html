@@ -1,0 +1,15 @@
+<template name="GroupFiles">
+    <h3>Files</h3>
+    <div class="container-fluid">
+        {{#if files}}
+        <div class="row">
+            {{#each files}}
+            {{> GroupFile}}
+            {{/each}}
+        </div>
+        <h3><a class="load-more" href="{{nextPath}}">Load more</a></h3>
+        {{else}}
+        No files...
+        {{/if}}
+    </div>
+</template>

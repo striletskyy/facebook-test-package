@@ -1,6 +1,7 @@
 /** Debuging the CollectionFS, cfs-s3, output errors */
 FS.debug = true;
 
+/** Store */
 var imageStore = new FS.Store.S3("images", {
     accessKeyId: "AKIAI5LRBT335O4LDWQQ", 
     secretAccessKey: "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", 
@@ -14,3 +15,14 @@ Images = new FS.Collection('images', {
 // [new FS.Store.FileSystem("images", {path: Meteor.call('getPath')})]
 
 // [imageStore]
+
+if(Meteor.isServer) {
+	Meteor.publish('images', function(author) {
+		return Images.find();
+	});
+}
+
+if(Meteor.isClient) {
+	Meteor.subscribe('images');
+} 
+

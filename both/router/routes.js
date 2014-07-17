@@ -185,8 +185,8 @@ Router.map(function () {
             'Friends': {to: 'left'}
         }
     });
-    this.route('notFound', {
+    /*this.route('notFound', {
         path: '*'
-    });
+    });*/
 
 });

@@ -7,7 +7,7 @@ Template.Interests.utilities = {
     }
 }
 
-Template.Interests.utilities.loadData();
+//Template.Interests.utilities.loadData();
 /*****************************************************************************/
 /* Interests: Event Handlers and Helpers */
 /*****************************************************************************/

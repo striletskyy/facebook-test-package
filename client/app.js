@@ -76,6 +76,9 @@ _.extend(App, {
 
             return first;
         }
+    },
+    Config: {
+        homeUrl: "http://community-plus-20518.onmodulus.net"
     }
 });
 

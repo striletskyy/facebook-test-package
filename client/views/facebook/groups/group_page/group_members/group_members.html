@@ -1,0 +1,11 @@
+<template name="GroupMembers">
+    <h3>Members</h3>
+    <div class="container-fluid">
+        <div class="row">
+            {{#each members}}
+            {{> Member}}
+            {{/each}}
+        </div>
+        <h3><a class="load-more" href="{{nextPath}}">Load more</a></h3>
+    </div>
+</template>

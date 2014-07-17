@@ -26,16 +26,15 @@ Template.Post.events({
                 if(err){
                     console.log('err :', err);
                 } 
-                var fileName = "images-" + fileObj._id + "-" + file.name;
                 var data = {
                     message: post.message.value,
                     name: post.name.value,
                     description: post.description.value,
                     link: post.link.value,
-                    picture: "http://localhost:2000/cfs/files/images/" + fileObj._id
+                    picture: App.Config.homeUrl + "/cfs/files/images/" + fileObj._id
                 };
-                //postFile(data);
-                console.log('link :', data.picture);
+                postFile(data);
+                console.log('images url :', data.picture);
                 //var image = Images.find({_id: fileObj._id});
                 //console.log('imageUrl', image && image.url);
             });
