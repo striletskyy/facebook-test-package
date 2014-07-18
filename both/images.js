@@ -3,9 +3,9 @@ FS.debug = true;
 
 /** Store */
 var imageStore = new FS.Store.S3("images", {
-    accessKeyId: "AKIAI5LRBT335O4LDWQQ", 
-    secretAccessKey: "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", 
-    bucket: "cyberion-meteor-dev" 
+    accessKeyId: "access-key", 
+    secretAccessKey: "secret-access-key", 
+    bucket: "bucket" 
 });
 
 Images = new FS.Collection('images', {
